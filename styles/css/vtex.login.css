@@ -1,0 +1,95 @@
+.options .formTitle {
+  border-bottom: 1px solid #e5e5e5;
+  border-radius: 0;
+  color: #25282a;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 24px;
+  padding-bottom: 23px;
+  text-align: left;
+}
+
+.contentForm .emailVerification .formTitle {
+  border-bottom: 1px solid #e5e5e5;
+  border-radius: 0;
+  color: #25282a;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 24px;
+  padding-bottom: 23px;
+  text-align: left;
+}
+
+.profileIcon {
+  color: #fff;
+}
+
+.sendButton :global(.vtex-button) {
+  background: var(--darkgrey-blue-2);
+  border-color: var(--darkgrey-blue-2);
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.button :global(.vtex-button) {
+  background: var(--darkgrey-blue-2);
+  border-color: var(--darkgrey-blue-2);
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  height: 52px;
+}
+
+.container :global(.vtex-button) {
+  align-items: center;
+  display: flex;
+
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.container :global(.vtex-button__label) {
+  padding: 0 !important;
+  margin: 0 !important;
+  border: 0 !important;
+}
+
+.label {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+  text-transform: none;
+  padding: 0;
+  margin: 0;
+
+  margin-top: -0.25rem;
+}
+
+.profileIcon--header-login {
+  width: 20px;
+  height: 20px;
+}
+
+.profile {
+  color: #ffffff;
+}
+
+@media (max-width: 90rem) {
+  .container :global(.vtex-button)::before {
+    display: none;
+  }
+
+  .profile {
+    display: block;
+  }
+}
+
+.buttonLink :global(.vtex-button) {
+  min-height: 2rem;
+}

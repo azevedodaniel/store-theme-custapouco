@@ -1,0 +1,38 @@
+.minicartWrapperContainer,
+.minicartContainer,
+.openIconContainer,
+.minicartWrapperContainer :global(.vtex-button),
+.minicartWrapperContainer :global(.vtex-button__label) {
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 30px !important;
+  width: 30px !important;
+
+  min-width: auto !important;
+  min-height: auto !important;
+  max-width: auto !important;
+  max-height: auto !important;
+
+  font-size: initial !important;
+  border: 0 !important;
+}
+
+.cartIcon,
+.minicartIconContainer {
+  width: 30px !important;
+  height: 30px !important;
+
+  color: #fff;
+}
+
+.minicartQuantityBadge {
+  background: #333333;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: -0.03em;
+  top: 20px;
+  right: -5px;
+}

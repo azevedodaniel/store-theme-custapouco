@@ -1,0 +1,6 @@
+.imageElement--contacts-col-img {
+    margin-bottom: 27px;
+    min-width: 30px;
+}
+
+.imageElementLink--botao-whatsapp { position: fixed; bottom:0; right: 10px; }

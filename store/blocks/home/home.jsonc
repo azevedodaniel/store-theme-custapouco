@@ -1,0 +1,777 @@
+{
+  "store.home": {
+    "blocks": [
+      "experimental__visibility-layout#home-top-banner",
+      "responsive-layout.desktop",
+      "responsive-layout.tablet",
+      "responsive-layout.phone"
+    ]
+  },
+  "responsive-layout.desktop": {
+    "title": "DESKTOP",
+    "children": [
+      // Tipbar
+      "experimental__visibility-layout#top-banner-tip-bar",
+      "experimental__visibility-layout#modal-news-home",
+      "flex-layout.row#home-slider-tabs",
+      "flex-layout.row#slide-categorias",
+      "flex-layout.row#home-slider-logos",
+      "flex-layout.row#home-slider-hot",
+      "flex-layout.row#banners-sexshop",
+      "flex-layout.row#lista-sexshop",
+      "flex-layout.row#section-colecoes",
+      "flex-layout.row#section-colecao-destaque",
+      "flex-layout.row#banner-promocoes",
+      "flex-layout.row#destaque-final-home"
+    ]
+  },
+  "responsive-layout.tablet": {
+    "title": "TABLET",
+    "children": [
+      // Tipbar
+      "experimental__visibility-layout#top-banner-tip-bar",
+      "experimental__visibility-layout#modal-news-home",
+      "flex-layout.row#home-slider-tabs",
+      "flex-layout.row#slide-categorias",
+      "flex-layout.row#home-slider-logos",
+      "flex-layout.row#home-slider-hot",
+      "flex-layout.row#banners-sexshop",
+      "flex-layout.row#lista-sexshop",
+      "flex-layout.row#section-colecoes",
+      "flex-layout.row#section-colecao-destaque",
+      "flex-layout.row#banner-promocoes",
+      "flex-layout.row#destaque-final-home"
+    ]
+  },
+  // ------------- Home Top Banner -------------
+  "experimental__visibility-layout#home-top-banner": {
+    "title": "Exibir Banner Principal",
+    "props": {
+      "visible": true
+    },
+    "children": [
+      "list-context.image-list#home-top-banner"
+    ]
+  },
+  "list-context.image-list#home-top-banner": {
+    "children": [
+      "slider-layout#home-top-banner"
+    ],
+    "title": "Imagens Banner Principal",
+    "props": {
+      "height": "",
+      "images": [
+        {
+          "image": "assets/imgs/banner-topo.png",
+          "mobileImage": "",
+          "link": "#"
+        },
+        {
+          "image": "assets/imgs/banner-topo.png",
+          "mobileImage": "",
+          "link": "#"
+        }
+      ]
+    }
+  },
+  "slider-layout#home-top-banner": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "arrowSize": 15,
+      "infinite": true,
+      "autoplay": {
+        "stopOnHover": true,
+        "timeout": 7000
+      },
+      "fullWidth": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "always",
+      "blockClass": "home-top-banner"
+    }
+  },
+  ////////// ---- AREA DO SLIDE DE CATEGORIAS ---- ////////
+  "flex-layout.row#slide-categorias": {
+    "title": "Slide Categorias",
+    "props": {
+      "blockClass": [
+        "slide-categorias"
+      ]
+    },
+    "children": [
+      "flex-layout.col#slide-categorias-col"
+    ]
+  },
+  "flex-layout.col#slide-categorias-col": {
+    "props": {
+      "blockClass": [
+        "slide-categorias-col"
+      ]
+    },
+    "children": [
+      "rich-text#slide-categorias-titulo",
+      "slider-layout#slide-categorias-lista"
+    ]
+  },
+  "rich-text#slide-categorias-titulo": {
+    "title": "Título Slide Categorias",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "## Navegue pelas Categorias\nPara  enconntrar de forma mais rápida seus produtos, nós separamos para você as categorias da nossa loja.",
+      "blockClass": [
+        "slide-categorias-titulo"
+      ]
+    }
+  },
+  "slider-layout#slide-categorias-lista": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 7,
+        "tablet": 4,
+        "phone": 2
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "mobileOnly",
+      "blockClass": "carousel"
+    },
+    "children": [
+      "flex-layout.col#categoria1",
+      "flex-layout.col#categoria2",
+      "flex-layout.col#categoria3",
+      "flex-layout.col#categoria4",
+      "flex-layout.col#categoria5",
+      "flex-layout.col#categoria6",
+      "flex-layout.col#categoria7",
+      "flex-layout.col#categoria8"
+    ]
+  },
+  "flex-layout.col#categoria1": {
+    "title": "Categoria 1",
+    "children": [
+      "image#foto-categoria1",
+      "rich-text#categoria1"
+    ]
+  },
+  "flex-layout.col#categoria2": {
+    "title": "Categoria 2",
+    "children": [
+      "image#foto-categoria2",
+      "rich-text#categoria2"
+    ]
+  },
+  "flex-layout.col#categoria3": {
+    "title": "Categoria 3",
+    "children": [
+      "image#foto-categoria3",
+      "rich-text#categoria3"
+    ]
+  },
+  "flex-layout.col#categoria4": {
+    "title": "Categoria 4",
+    "children": [
+      "image#foto-categoria4",
+      "rich-text#categoria4"
+    ]
+  },
+  "flex-layout.col#categoria5": {
+    "title": "Categoria 5",
+    "children": [
+      "image#foto-categoria5",
+      "rich-text#categoria5"
+    ]
+  },
+  "flex-layout.col#categoria6": {
+    "title": "Categoria 6",
+    "children": [
+      "image#foto-categoria6",
+      "rich-text#categoria6"
+    ]
+  },
+  "flex-layout.col#categoria7": {
+    "title": "Categoria 7",
+    "children": [
+      "image#foto-categoria7",
+      "rich-text#categoria7"
+    ]
+  },
+  "flex-layout.col#categoria8": {
+    "title": "Categoria 8",
+    "children": [
+      "image#foto-categoria8",
+      "rich-text#categoria8"
+    ]
+  },
+  "image#foto-categoria1": {
+    "props": {
+      "src": "https://as2.ftcdn.net/v2/jpg/04/19/30/97/1000_F_419309754_SrxVJjD5v5OwYiZ5UIqwMbWiCtl05oZO.jpg",
+      "link": {
+        "newTab": true,
+        "attributeTitle": "My image here",
+        "url": "#"
+      }
+    }
+  },
+  "rich-text#categoria1": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Sex Shop"
+    }
+  },
+  "image#foto-categoria2": {
+    "props": {
+      "src": "https://cdn.dooca.store/454/files/banner-home-03-1.jpg?v=1680272394",
+      "link": {
+        "newTab": true,
+        "attributeTitle": "My image here",
+        "url": "#"
+      }
+    }
+  },
+  "rich-text#categoria2": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Plus Size"
+    }
+  },
+  "image#foto-categoria3": {
+    "props": {
+      "src": "https://www.fruitdelapassion.com.br/arquivos/3fotobanner-3.jpg?v=637874558579900000",
+      "link": {
+        "newTab": true,
+        "attributeTitle": "My image here",
+        "url": "#"
+      }
+    }
+  },
+  "rich-text#categoria3": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Pijamas"
+    }
+  },
+  "image#foto-categoria4": {
+    "props": {
+      "src": "https://839028l.ha.azioncdn.net/img/2022/08/produto/8101/66527-007-1460-f.jpg?ims=700x1000",
+      "link": {
+        "newTab": true,
+        "attributeTitle": "My image here",
+        "url": "#"
+      }
+    }
+  },
+  "rich-text#categoria4": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Moda Praia"
+    }
+  },
+  "image#foto-categoria5": {
+    "props": {
+      "src": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/965/764/products/2e1fdced00091493ba1b2b3a293abeb1-2619e7d148c193e09f16389687874854-640-0.jpg",
+      "link": {
+        "newTab": true,
+        "attributeTitle": "My image here",
+        "url": "#"
+      }
+    }
+  },
+  "rich-text#categoria5": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Fantasias"
+    }
+  },
+  "image#foto-categoria6": {
+    "props": {
+      "src": "https://cdn.shopify.com/s/files/1/1169/7228/files/Lingerie_Sets_14756150-6793-4c68-acaf-278cfa998a59.png?v=1683017856",
+      "link": {
+        "newTab": true,
+        "attributeTitle": "My image here",
+        "url": "#"
+      }
+    }
+  },
+  "rich-text#categoria6": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Coleções"
+    }
+  },
+  "image#foto-categoria7": {
+    "props": {
+      "src": "https://down-br.img.susercontent.com/file/br-11134201-22120-n2zenquulalv3c_tn",
+      "link": {
+        "newTab": true,
+        "attributeTitle": "My image here",
+        "url": "#"
+      }
+    }
+  },
+  "rich-text#categoria7": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Outlet"
+    }
+  },
+  "image#foto-categoria8": {
+    "props": {
+      "src": "https://a-static.mlcdn.com.br/800x560/cueca-boxer-ions-de-prata-2-unidades-p-e-energy/gsflexprodutosterapeuticos/df42f108ffa011ec92274201ac185079/d91e3b47821d6656c6b0ec357760ee99.jpg",
+      "link": {
+        "newTab": true,
+        "attributeTitle": "My image here",
+        "url": "#"
+      }
+    }
+  },
+  "rich-text#categoria8": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Moda Masculinna"
+    }
+  },
+  ////////// ---- FIM - AREA DO SLIDE DE CATEGORIAS ---- ////////
+  ////////// ---- BANNERS SEX SHOP ---- ////////
+  "flex-layout.row#banners-sexshop": {
+    "title": "Banner Sex-shop",
+    "props": {
+      "colSizing": "equal",
+      "colGap": 3,
+      "rowGap": 3,
+      "blockClass": [
+        "banners-sexshop"
+      ]
+    },
+    "children": [
+      "flex-layout.col#banner-principal",
+      "flex-layout.col#banner-secundario"
+    ]
+  },
+  "flex-layout.col#banner-principal": {
+    "props": {
+      "blockClass": [
+        "banners-sexshop-coluna1"
+      ]
+    },
+    "children": [
+      "image#banner-sexshop-principal"
+    ]
+  },
+  "flex-layout.col#banner-secundario": {
+    "props": {
+      "blockClass": [
+        "banners-sexshop-coluna2"
+      ]
+    },
+    "children": [
+      "image#banner-sexshop-secundario1",
+      "image#banner-sexshop-secundario2"
+    ]
+  },
+  "image#banner-sexshop-principal": {
+    "props": {
+      "src": "assets/imgs/banner-sexshop-1.png"
+    }
+  },
+  "image#banner-sexshop-secundario1": {
+    "props": {
+      "src": "assets/imgs/banner-sexshop-2.png",
+      "link": {
+        "url": "https://custapoucoseduzir.vtexassets.com/assets/vtex.file-manager-graphql/images/2a26f9a3-7356-49dd-82f9-654054bb713d___984a65d236c909758e87894f0db867f3.png",
+        "newTab": true
+      }
+    }
+  },
+  "image#banner-sexshop-secundario2": {
+    "props": {
+      "src": "assets/imgs/banner-sexshop-3.png"
+    }
+  },
+  ////////// ---- FIM - BANNERS SEX SHOP ---- ////////
+  ////////// ---- LISTA CATEGORIA SEX SHOP ---- ////////
+  "flex-layout.row#lista-sexshop": {
+    "title": "Slide Sex-shop",
+    "props": {
+      "fullWidth": false,
+      "blockClass": [
+        "lista-sexshop"
+      ]
+    },
+    "children": [
+      "flex-layout.col#lista-sexshop"
+    ]
+  },
+  "flex-layout.col#lista-sexshop": {
+    "children": [
+      "rich-text#lista-sexshop",
+      "list-context.product-list#lista-sexshop",
+      "link.product#lista-sexshop"
+    ]
+  },
+  "rich-text#lista-sexshop": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "## Produtos do Sex Shop",
+      "blockClass": [
+        "titulo-lista-sexshop"
+      ]
+    }
+  },
+  "list-context.product-list#lista-sexshop": {
+    "blocks": [
+      "product-summary.shelf#product-list-layout"
+    ],
+    "children": [
+      "slider-layout#lista-sexshop"
+    ]
+  },
+  "slider-layout#lista-sexshop": {
+    "props": {
+      "showPaginationDots": "never",
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 2,
+        "phone": 1
+      },
+      "showNavigationArrows": "always",
+      "blockClass": "lista-sexshop-carousel"
+    }
+  },
+  "link.product#lista-sexshop": {
+    "props": {
+      "href": "#",
+      "label": "Ver toda linha de Sex Shop"
+    }
+  },
+  ////////// ---- FIM - LISTA CATEGORIA SEX SHOP ---- ////////
+  ////////// ---- AREA DE COLECOES ---- ////////
+  "flex-layout.row#section-colecoes": {
+    "title": "Seção de Coleções",
+    "props": {
+      "blockClass": [
+        "section-colecoes"
+      ]
+    },
+    "children": [
+      "flex-layout.col#cont-colecao"
+    ]
+  },
+  "flex-layout.col#cont-colecao": {
+    "props": {
+      "blockClass": [
+        "cont-colecao"
+      ]
+    },
+    "children": [
+      "rich-text#cont-colecao-titulo",
+      "flex-layout.row#lista-colecoes"
+    ]
+  },
+  "rich-text#cont-colecao-titulo": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "## NOSSAS COLEÇÕES\nEssas são as coleções produzidas pela Custa Pouco Seduzir",
+      "blockClass": [
+        "cont-colecao-titulo"
+      ]
+    }
+  },
+  "flex-layout.row#lista-colecoes": {
+    "props": {
+      "blockClass": [
+        "lista-colecoes"
+      ]
+    },
+    "children": [
+      "flex-layout.col#colecao1",
+      "flex-layout.col#colecao2",
+      "flex-layout.col#colecao3",
+      "flex-layout.col#colecao4"
+    ]
+  },
+  "flex-layout.col#colecao1": {
+    "props": {
+      "blockClass": [
+        "colecao-destaque"
+      ]
+    },
+    "children": [
+      "image#foto-colecao1",
+      "rich-text#colecao1"
+    ]
+  },
+  "flex-layout.col#colecao2": {
+    "props": {
+      "blockClass": [
+        "colecao-destaque"
+      ]
+    },
+    "children": [
+      "image#foto-colecao2",
+      "rich-text#colecao2"
+    ]
+  },
+  "flex-layout.col#colecao3": {
+    "props": {
+      "blockClass": [
+        "colecao-destaque"
+      ]
+    },
+    "children": [
+      "image#foto-colecao3",
+      "rich-text#colecao3"
+    ]
+  },
+  "flex-layout.col#colecao4": {
+    "props": {
+      "blockClass": [
+        "colecao-destaque"
+      ]
+    },
+    "children": [
+      "image#foto-colecao4",
+      "rich-text#colecao4"
+    ]
+  },
+  "image#foto-colecao1": {
+    "props": {
+      "src": "https://cdn.shopify.com/s/files/1/0579/2494/4070/products/conjuntolingeriederendafloralcinta-ligacorset_650x.jpg?v=1654021537",
+      "link": {
+        "newTab": true,
+        "attributeTitle": "My image here",
+        "url": "#"
+      }
+    }
+  },
+  "rich-text#colecao1": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "### Coleção ATUAL\nCamisolas e Lingeries\n*veja a coleção*",
+      "blockClass": "chamada-colecao-destaque"
+    }
+  },
+  "image#foto-colecao2": {
+    "props": {
+      "src": "https://http2.mlstatic.com/D_NQ_NP_812070-MLB48125126353_112021-O.jpg",
+      "link": {
+        "newTab": true,
+        "attributeTitle": "My image here",
+        "url": "#"
+      }
+    }
+  },
+  "rich-text#colecao2": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "### Coleção ATUAL\nCamisolas e Lingeries\n*veja a coleção*",
+      "blockClass": "chamada-colecao-destaque"
+    }
+  },
+  "image#foto-colecao3": {
+    "props": {
+      "src": "https://images.tcdn.com.br/img/img_prod/731691/lingerie_sexy_cropped_vermelho_com_renda_preta_cinta_liga_e_persex_943_1_cf6cac5a6e61781a0714c5e678ca6774.jpg",
+      "link": {
+        "newTab": true,
+        "attributeTitle": "My image here",
+        "url": "#"
+      }
+    }
+  },
+  "rich-text#colecao3": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "### Coleção ATUAL\nCamisolas e Lingeries\n*veja a coleção*",
+      "blockClass": "chamada-colecao-destaque"
+    }
+  },
+  "image#foto-colecao4": {
+    "props": {
+      "src": "https://images.tcdn.com.br/img/img_prod/807612/conjunto_de_lingerie_sexy_sem_bojo_com_aro_e_com_saia_deusa_de_kali_677_1_c0bbb8eb6cb637f0a241c79de631a3ce.jpg",
+      "link": {
+        "newTab": true,
+        "attributeTitle": "My image here",
+        "url": "#"
+      }
+    }
+  },
+  "rich-text#colecao4": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "### Coleção ATUAL\nCamisolas e Lingeries\n*veja a coleção*",
+      "blockClass": "chamada-colecao-destaque"
+    }
+  },
+  ////////// ---- FIM - AREA DE COLECOES ---- ////////
+  ////////// ---- DESTAQUE COLECAO ---- ////////
+  "flex-layout.row#section-colecao-destaque": {
+    "title": "Slide Coleções Destaque",
+    "props": {
+      "fullWidth": false,
+      "blockClass": [
+        "colecao-destaque"
+      ]
+    },
+    "children": [
+      "image#colecao-destaque-img",
+      "list-context.product-list#colecao-destaque-lista"
+    ]
+  },
+  "image#colecao-destaque-img": {
+    "props": {
+      "src": "assets/imgs/banner-lista-colecao.png"
+    }
+  },
+  "list-context.product-list#colecao-destaque-lista": {
+    "blocks": [
+      "product-summary.shelf#product-list-layout"
+    ],
+    "children": [
+      "slider-layout#colecao-destaque-produtos"
+    ]
+  },
+  "slider-layout#colecao-destaque-produtos": {
+    "props": {
+      "showPaginationDots": "never",
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 2,
+        "phone": 1
+      },
+      "showNavigationArrows": "always",
+      "blockClass": "colecao-destaque-produtos-carousel"
+    }
+  },
+  ////////// ---- FIM - DESTAQUE COLECAO ---- ////////
+  ////////// ---- BANNER PROMOCOES ---- ////////
+  "flex-layout.row#banner-promocoes": {
+    "title": "Banner Triplo Promoções",
+    "props": {
+      "fullWidth": true,
+      "blockClass": [
+        "banner-promocoes"
+      ]
+    },
+    "children": [
+      "image#promocao1",
+      "image#promocao2",
+      "image#promocao3"
+    ]
+  },
+  "image#promocao1": {
+    "props": {
+      "src": "assets/imgs/banner-promocao-1.png",
+      "link": {
+        "url": "#",
+        "newTab": true,
+        "attributeTitle": "My image here"
+      }
+    }
+  },
+  "image#promocao2": {
+    "props": {
+      "src": "assets/imgs/banner-promocao-2.png",
+      "link": {
+        "url": "#",
+        "newTab": true,
+        "attributeTitle": "My image here"
+      }
+    }
+  },
+  "image#promocao3": {
+    "props": {
+      "src": "assets/imgs/banner-promocao-3.png",
+      "link": {
+        "url": "#",
+        "newTab": true,
+        "attributeTitle": "My image here"
+      }
+    }
+  },
+  ////////// ---- FIM - BANNER PROMOCOES ---- ////////
+  ////////// ---- SECTION PRODUTOS EM DESTAQUE FINAL HOME ---- ////////
+  "flex-layout.row#destaque-final-home": {
+    "title": "Slide Produto em Destaque Final",
+    "props": {
+      "fullWidth": true,
+      "blockClass": [
+        "destaque-final-home"
+      ]
+    },
+    "children": [
+      "flex-layout.col#img-destaque-final",
+      "flex-layout.col#produtos-destaque-final"
+    ]
+  },
+  "flex-layout.col#img-destaque-final": {
+    "children": [
+      "image#img-destaque-final"
+    ]
+  },
+  "flex-layout.col#produtos-destaque-final": {
+    "props": {
+      "blockClass": [
+        "destaque-final-home"
+      ]
+    },
+    "children": [
+      "rich-text#titulo-produtos-destaque-final",
+      "list-context.product-list#lista-destaque-final"
+    ]
+  },
+  "image#img-destaque-final": {
+    "props": {
+      "src": "assets/imgs/pijamas-de-inverno.jpg",
+      "link": {
+        "url": "/Pijamas"
+      }
+    }
+  },
+  "rich-text#titulo-produtos-destaque-final": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "Lançamentos\n### Coleção Angels",
+      "blockClass": [
+        "titulo-destaque-final-home"
+      ]
+    }
+  },
+  "list-context.product-list#lista-destaque-final": {
+    "blocks": [
+      "product-summary.shelf#product-list-layout"
+    ],
+    "children": [
+      "slider-layout#slide-destaque-final"
+    ]
+  },
+  "slider-layout#slide-destaque-final": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 2,
+        "phone": 1
+      },
+      "showNavigationArrows": "always",
+      "blockClass": "destaque-final-carousel"
+    }
+  }
+  ////////// ---- FIM - SECTION PRODUTOS EM DESTAQUE FINAL HOME ---- ////////
+}

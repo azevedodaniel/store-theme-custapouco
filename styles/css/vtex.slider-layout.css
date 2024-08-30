@@ -1,0 +1,23 @@
+.sliderLayoutContainer {
+  justify-content: center;
+}
+
+.sliderTrackContainer {
+  max-width: 100%;
+}
+
+.sliderTrack {
+  height: auto;
+}
+
+.paginationDotsContainer {
+  margin-bottom: 2rem;
+}
+
+.paginationDot {
+  background-color: #fff;
+}
+
+.paginationDot--isActive {
+  background-color: #ab1c21;
+}

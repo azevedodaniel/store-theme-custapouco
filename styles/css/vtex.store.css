@@ -1,0 +1,39 @@
+:not(:global(.vtex-fake)),
+:global(.vtex-store__template),
+:global(.vtex-modal-layout-0-x-container),
+:global(.vtex-minicart-2-x-drawer),
+:global(.vtex-telemarketing-2-x-portalContainer),
+:global(.vtex-login-2-x-portalContainer) {
+  --darkgrey-darker: #111111;
+  --darkgrey-dark: #25282a;
+  --darkgrey-medium: #545859;
+  --darkgrey-light: #999999;
+  --lightgrey-light: #e5e5e5;
+  --lightgrey-lighter: #f2f2f2;
+  --lightgrey-medium: #cccccc;
+  --primary-default: var(--darkgrey-blue-2);
+  --primary-light: #ccdfff;
+  --primary-dark: #00aeef;
+  --black-dark: #000000;
+  --fresh-blue: #0067c7;
+  --fresh-blue-dark: #0067c7;
+  --fresh-blue-lightest: #f3f9ff;
+  --fresh-orange: #ff5f00;
+  --fresh-darkest: #535353;
+  --green-dark: #468a2e;
+  --black-medium: #717786;
+  --bg-header: #e4e4e4;
+  --blue-medium: #597298;
+  --b2b-blue-darkest: #1b3255;
+  --lines-dark: #bdc9d6;
+  --lines-darker: #a3afbc;
+  --lines-light: #dee7ef;
+  --serious-blue-dark: #214d8e;
+  --serious-black: #111111;
+  --serious-orange: #ff7d30;
+  --base: #fff;
+  --darkgrey-blue-2: #999999;
+  --darkgrey-blue-3: #ebebeb;
+  --notification-bar: #ab1c21;
+  --notification-bar-dark: #ab1c21;
+}

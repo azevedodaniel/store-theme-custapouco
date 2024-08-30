@@ -1,0 +1,13 @@
+{
+    "store.custom#vitrine-flex": {
+        "blocks": [
+        "search-result-layout.customQuery#vitrine-flex"
+        ]
+    },
+    "search-result-layout.customQuery#vitrine-flex": {
+        "blocks": [
+        "search-result-layout.desktop",
+        "search-result-layout.mobile"
+        ]
+    }
+}

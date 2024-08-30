@@ -1,0 +1,12 @@
+.imageElement--tip-bar-col-img {
+  width: 52px;
+  height: 52px;
+}
+
+.imageElement--home-top-banner,
+:global(.vtex-store-components-3-x-imageElementLink--home-top-banner) {
+  height: 100% !important;
+  width: 100% !important;
+  max-width: 1000000px !important;
+  max-height: 1000000px !important;
+}

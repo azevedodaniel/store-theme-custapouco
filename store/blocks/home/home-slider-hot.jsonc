@@ -1,0 +1,82 @@
+{
+  "flex-layout.row#home-slider-hot": {
+    "props": {
+      "blockClass": "home-slider-hot-wrapper"
+    },
+    "children": ["flex-layout.col#home-slider-hot"],
+    "title": "Ofertas Hot"
+  },
+
+  "flex-layout.col#home-slider-hot": {
+    "props": {
+      "blockClass": "home-slider-hot"
+    },
+    "children": [
+      "flex-layout.row#home-title-hot",
+      "list-context.product-list#home-slider-hot",
+      "rich-text#home-button-hot"
+    ]
+  },
+
+  "flex-layout.row#home-title-hot": {
+    "props": {
+      "blockClass": "home-slider-hot",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    },
+    "children": ["rich-text#home-title-hot-3", "countdown-timer"],
+    "title": "Title Ofertas Hot"
+  },
+
+  "rich-text#home-title-hot-3": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "**Ofertas HOT!** Aproveite os descontos exclusivos",
+      "blockClass": "home-title-hot-1"
+    }
+  },
+
+  "rich-text#home-title-hot-2": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "19:04:15",
+      "blockClass": "home-title-hot-2"
+    }
+  },
+
+  "list-context.product-list#home-slider-hot": {
+    "blocks": ["product-summary.shelf#product-list-layout"],
+    "children": ["slider-layout#home-slider-hot"],
+    "props": {
+      "orderBy": "OrderByReviewRateDESC",
+      "hideUnavailableItems": true
+    }
+  },
+
+  "slider-layout#home-slider-hot": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 2
+      },
+      "arrowSize": 15,
+      "infinite": false,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never",
+      "fullWidth": true,
+      "blockClass": "home-slider-tabs-hot"
+    }
+  },
+
+  "rich-text#home-button-hot": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "[Ver todos os Produtos](/sex-shop)",
+      "blockClass": "home-button-hot"
+    }
+  }
+}

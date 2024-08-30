@@ -1,0 +1,22 @@
+.headerRowContainer--header-top-bar {
+  background-color: #ab1c21 !important; 
+  height: 80px !important;
+  width: 100% !important;
+  position: relative;
+
+  padding: 0 1rem;
+}
+
+.headerRowContainer--header-bottom-bar {
+  background-color: #cb2026 !important;
+  height: 80px !important;
+  width: 100% !important;
+  position: relative;
+
+  padding: 0 1rem;
+}
+
+.headerRowContainer--header-top-bar
+  :global(.vtex-store-components-3-x-searchBarContainer) {
+  width: auto;
+}

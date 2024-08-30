@@ -1,0 +1,438 @@
+{
+  "responsive-layout.phone": {
+    "title": "PHONE",
+    "children": [
+      // Slide fixed
+      "flex-layout.row#home-category-fixed-mobile",
+      // Links below the banner
+      "flex-layout.row#home-links-mobile",
+      "flex-layout.row#home-slider-hot",
+      // Gallery Mais Procurados
+      "flex-layout.row#lista-mais-procurados",
+      // Brands
+      "flex-layout.row#home-brands-mobile",
+      // Category Images
+      "flex-layout.row#home-category-images-mobile",
+      // Gallery Colecões
+      "flex-layout.row#lista-colecao1",
+      "flex-layout.row#lista-colecao2",
+      // Banner promotions
+      "flex-layout.row#home-banner-promotions-mobile"
+    ]
+  },
+  "flex-layout.row#home-links-mobile": {
+    "title": "Links embaixo do banner",
+    "props": {
+      "blockClass": "home-links-mobile"
+    },
+    "children": [
+      "flex-layout.row#home-links-mobile-row-1",
+      "flex-layout.row#home-links-mobile-row-2"
+    ]
+  },
+  "flex-layout.row#home-links-mobile-row-1": {
+    "props": {
+      "blockClass": "home-links-mobile-row"
+    },
+    "children": [
+      "link#home-links-mobile-1",
+      "link#home-links-mobile-2"
+    ]
+  },
+  "link#home-links-mobile-1": {
+    "props": {
+      "label": "LANÇAMENTOS",
+      "href": "/139?map=productClusterIds&order=OrderByReleaseDateDESC",
+      "blockClass": "home-links-mobile-row"
+    }
+  },
+  "link#home-links-mobile-2": {
+    "props": {
+      "label": "MAIS VENDIDOS",
+      "href": "/152?map=productClusterIds",
+      "blockClass": "home-links-mobile-row"
+    }
+  },
+  "flex-layout.row#home-links-mobile-row-2": {
+    "props": {
+      "blockClass": "home-links-mobile-row"
+    },
+    "children": [
+      "link#home-links-mobile-3",
+      "link#home-links-mobile-4"
+    ]
+  },
+  "link#home-links-mobile-3": {
+    "props": {
+      "label": "OUTLET",
+      "href": "/outlet",
+      "blockClass": "home-links-mobile-row"
+    }
+  },
+  "link#home-links-mobile-4": {
+    "props": {
+      "label": "PRODUTOS PARA REVENDA",
+      "href": "/150?map=productClusterIds",
+      "blockClass": "home-links-mobile-row"
+    }
+  },
+  // lista mais procurads
+  "flex-layout.row#lista-mais-procurados": {
+    "title": "Galeria Produtos Mais Procurados",
+    "children": [
+      "flex-layout.col#lista-mais-procurados"
+    ]
+  },
+  "flex-layout.col#lista-mais-procurados": {
+    "children": [
+      "rich-text#titleMaisProcurados",
+      "list-context.product-list#lista-maisProcurados",
+      "link.product#lista-MaisProcurados"
+    ],
+    "props": {
+      "blockClass": "colMaisProcurados"
+    }
+  },
+  "rich-text#titleMaisProcurados": {
+    "props": {
+      "text": "PRODUTOS **MAIS PROCURADOS**",
+      "blockClass": "title-list"
+    }
+  },
+  "list-context.product-list#lista-maisProcurados": {
+    "blocks": [
+      "product-summary.shelf#product-list-layout"
+    ],
+    "children": [
+      "slider-layout#lista-maisProcurados"
+    ]
+  },
+  "slider-layout#lista-maisProcurados": {
+    "props": {
+      "fullWidth": true,
+      "infinite": false,
+      "itemsPerPage": {
+        "phone": 6
+      },
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "blockClass": "maisProcurados"
+    }
+  },
+  "link.product#lista-MaisProcurados": {
+    "props": {
+      "href": "/155?map=productClusterIds&order=OrderByTopSaleDESC",
+      "label": "Ver todos os produtos >",
+      "blockClass": "button-listaMaisProcurados"
+    }
+  },
+  // lista mais procurados FINAL
+  "flex-layout.row#home-brands-mobile": {
+    "title": "Galeria Logos",
+    "props": {
+      "blockClass": "home-brands-mobile"
+    },
+    "children": [
+      "flex-layout.row#home-brands-row-1",
+      "flex-layout.row#home-brands-row-2",
+      "flex-layout.row#home-brands-row-3"
+    ]
+  },
+  "flex-layout.row#home-brands-row-1": {
+    "props": {
+      "blockClass": "home-brands-mobile-content"
+    },
+    "children": [
+      "image#home-brands-image-1",
+      "image#home-brands-image-2",
+      "image#home-brands-image-3"
+    ]
+  },
+  "image#home-brands-image-1": {
+    "props": {
+      "src": "https://custapoucoseduzir.vtexassets.com/assets/vtex.file-manager-graphql/images/7da947a5-0595-45ee-b440-53e9be7f4010___4976ede5a195e5c81ce183a2f385aeb1.png",
+      "blockClass": "home-brands-image",
+      "link": {
+        "url": "/sex-shop/la-pimienta?initialMap=c&initialQuery=sex-shop&map=category-1,brand"
+      }
+    }
+  },
+  "image#home-brands-image-2": {
+    "props": {
+      "src": "https://custapoucoseduzir.vtexassets.com/assets/vtex.file-manager-graphql/images/01f82c30-b4f1-460f-9da6-78ec95d0c832___6aed9154044570e35a153e54daa899b6.png",
+      "blockClass": "home-brands-image",
+      "link": {
+        "url": "/sex-shop/pessini?initialMap=c&initialQuery=sex-shop&map=category-1,brand"
+      }
+    }
+  },
+  "image#home-brands-image-3": {
+    "props": {
+      "src": "https://custapoucoseduzir.vtexassets.com/assets/vtex.file-manager-graphql/images/24a99925-df5d-4348-9896-d99b087ff28b___30e2c04fe163136a32602848f14efee8.png",
+      "blockClass": "home-brands-image",
+      "link": {
+        "url": "/sex-shop/sexy-fantasy?initialMap=c&initialQuery=sex-shop&map=category-1,brand"
+      }
+    }
+  },
+  "flex-layout.row#home-brands-row-2": {
+    "props": {
+      "blockClass": "home-brands-mobile-content"
+    },
+    "children": [
+      "image#home-brands-image-4",
+      "image#home-brands-image-5",
+      "image#home-brands-image-6"
+    ]
+  },
+  "image#home-brands-image-4": {
+    "props": {
+      "src": "https://custapoucoseduzir.vtexassets.com/assets/vtex.file-manager-graphql/images/cbf51f7b-e623-4be3-87ed-da6e64bd2760___1f511af55deeceafdc9c35578d69aeb2.png",
+      "blockClass": "home-brands-image",
+      "link": {
+        "url": "/sex-shop/rilex?initialMap=c&initialQuery=sex-shop&map=category-1,brand"
+      }
+    }
+  },
+  "image#home-brands-image-5": {
+    "props": {
+      "src": "https://custapoucoseduzir.vtexassets.com/assets/vtex/assets-builder/custapoucoseduzir.theme/5.0.0/imgs/loka-sensacao___c48331c49988383c38d5bc084a5f449a.png",
+      "blockClass": "home-brands-image",
+      "link": {
+        "url": "/loka-sensacao"
+      }
+    }
+  },
+  "image#home-brands-image-6": {
+    "props": {
+      "src": "https://custapoucoseduzir.vtexassets.com/assets/vtex.file-manager-graphql/images/96dd6098-a52b-441b-91cf-557fdb044308___83ebc407b459cd95513c8698e5f06240.png",
+      "blockClass": "home-brands-image",
+      "link": {
+        "url": "/sex-shop/for-sexy?initialMap=c&initialQuery=sex-shop&map=category-1,brand"
+      }
+    }
+  },
+  "flex-layout.row#home-brands-row-3": {
+    "props": {
+      "blockClass": "home-brands-mobile-content"
+    },
+    "children": [
+      "image#home-brands-image-7",
+      "image#home-brands-image-8",
+      "image#home-brands-image-9"
+    ]
+  },
+  "image#home-brands-image-7": {
+    "props": {
+      "src": "https://custapoucoseduzir.vtexassets.com/assets/vtex.file-manager-graphql/images/229fcf94-7bd9-465c-9903-889314eef702___17d3781b7b2d820dc99c454b204ecac6.png",
+      "blockClass": "home-brands-image",
+      "link": {
+        "url": "/sex-shop/intt?initialMap=c&initialQuery=sex-shop&map=category-1,brand"
+      }
+    }
+  },
+  "image#home-brands-image-8": {
+    "props": {
+      "src": "https://custapoucoseduzir.vtexassets.com/assets/vtex.file-manager-graphql/images/d1172f21-2eab-4a34-bfde-c8c1fae2023a___369fccd25d12dacb2b4e0e054c20ed31.png",
+      "blockClass": "home-brands-image",
+      "link": {
+        "url": "/sex-shop/apinil?initialMap=c&initialQuery=sex-shop&map=category-1,brand"
+      }
+    }
+  },
+  "image#home-brands-image-9": {
+    "props": {
+      "src": "https://custapoucoseduzir.vtexassets.com/assets/vtex.file-manager-graphql/images/fb9e5ea0-3ed8-44db-ac91-b78a6ea875c0___bc9b69aad0e1a30f32a1f0b0a747fb02.png",
+      "blockClass": "home-brands-image",
+      "link": {
+        "url": "/sex-shop/hot-flowers?initialMap=c&initialQuery=sex-shop&map=category-1,brand"
+      }
+    }
+  },
+  "flex-layout.row#home-category-images-mobile": {
+    "title": "Imagens de Coleção",
+    "props": {
+      "blockClass": "home-category-images-mobile"
+    },
+    "children": [
+      "flex-layout.col#home-category-images-mobile"
+    ]
+  },
+  "flex-layout.col#home-category-images-mobile": {
+    "props": {
+      "blockClass": "home-category-images-mobile"
+    },
+    "children": [
+      "image#home-category-images-mobile-1",
+      "image#home-category-images-mobile-2",
+      "image#home-category-images-mobile-3"
+    ]
+  },
+  "image#home-category-images-mobile-1": {
+    "props": {
+      "link": {
+        "url": "/sex-shop/vibradores"
+      },
+      "src": "https://custapoucoseduzir.vtexassets.com/assets/vtex/assets-builder/custapoucoseduzir.theme/5.0.0/imgs/banner-sexshop-2___88a23e54662df48c68ffcc37ac5d9fd0.png",
+      "blockClass": "home-category-images-mobile"
+    }
+  },
+  "image#home-category-images-mobile-2": {
+    "props": {
+      "link": {
+        "url": "/sex-shop/plug"
+      },
+      "src": "https://custapoucoseduzir.vtexassets.com/assets/vtex/assets-builder/custapoucoseduzir.theme/5.0.0/imgs/banner-sexshop-3___f412efea3bf818627aa4abd09b85fc3b.png",
+      "blockClass": "home-category-images-mobile"
+    }
+  },
+  "image#home-category-images-mobile-3": {
+    "props": {
+      "link": {
+        "url": "/Line-Sexy/Colecao-Abusadas"
+      },
+      "src": "https://custapoucoseduzir.vtexassets.com/assets/vtex.file-manager-graphql/images/a896467a-69e6-43f7-b5d1-3358dfc9a001___4bf1310b2a6cd0c11da5a5221431168a.jpg",
+      "blockClass": "home-category-images-mobile"
+    }
+  },
+  // lista coleção 1
+  "flex-layout.row#lista-colecao1": {
+    "title": "Galeria de Coleção 1",
+    "children": [
+      "flex-layout.col#lista-colecao1"
+    ]
+  },
+  "flex-layout.col#lista-colecao1": {
+    "children": [
+      "rich-text#title-colecao1",
+      "list-context.product-list#lista-colecao1",
+      "link.product#lista-colecao1"
+    ],
+    "props": {
+      "blockClass": "colMaisProcurados"
+    }
+  },
+  "rich-text#title-colecao1": {
+    "props": {
+      "text": "COLEÇÃO **APAIXONANTE**",
+      "blockClass": "title-colecao1"
+    }
+  },
+  "list-context.product-list#lista-colecao1": {
+    "blocks": [
+      "product-summary.shelf#product-list-layout"
+    ],
+    "children": [
+      "slider-layout#lista-colecao1"
+    ]
+  },
+  "slider-layout#lista-colecao1": {
+    "props": {
+      "fullWidth": true,
+      "infinite": false,
+      "itemsPerPage": {
+        "phone": 4
+      },
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "blockClass": "maisProcurados"
+    }
+  },
+  "link.product#lista-colecao1": {
+    "props": {
+      "href": "Coleção-Apaixonante",
+      "label": "Ver todos os produtos >",
+      "blockClass": "button-listaMaisProcurados"
+    }
+  },
+  // lista coleção 1 FINAL
+  // lista coleção 2
+  "flex-layout.row#lista-colecao2": {
+    "title": "Galeria de Coleção 2",
+    "children": [
+      "flex-layout.col#lista-colecao2"
+    ]
+  },
+  "flex-layout.col#lista-colecao2": {
+    "children": [
+      "rich-text#title-colecao2",
+      "list-context.product-list#lista-colecao2",
+      "link.product#lista-colecao2"
+    ],
+    "props": {
+      "blockClass": "colMaisProcurados"
+    }
+  },
+  "rich-text#title-colecao2": {
+    "props": {
+      "text": "PIJAMAS **DE INVERNO**",
+      "blockClass": "title-colecao2"
+    }
+  },
+  "list-context.product-list#lista-colecao2": {
+    "blocks": [
+      "product-summary.shelf#product-list-layout"
+    ],
+    "children": [
+      "slider-layout#lista-colecao2"
+    ]
+  },
+  "slider-layout#lista-colecao2": {
+    "props": {
+      "fullWidth": true,
+      "infinite": false,
+      "itemsPerPage": {
+        "phone": 4
+      },
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "blockClass": "maisProcurados"
+    }
+  },
+  "link.product#lista-colecao2": {
+    "props": {
+      "href": "pijamas/pijama-de-inverno",
+      "label": "Ver todos os produtos >",
+      "blockClass": "button-listaMaisProcurados"
+    }
+  },
+  // lista coleção 2 FINAL
+  "flex-layout.row#home-banner-promotions-mobile": {
+    "title": "Banner de Promoções",
+    "props": {
+      "blockClass": "home-banner-promotions-mobile"
+    },
+    "children": [
+      "image#home-banner-promotions-mobile-1",
+      "image#home-banner-promotions-mobile-2",
+      "image#home-banner-promotions-mobile-3"
+    ]
+  },
+  "image#home-banner-promotions-mobile-1": {
+    "props": {
+      "link": {
+        "url": "/sex-shop/fetiche-e-sado"
+      },
+      "src": "https://custapoucoseduzir.vtexassets.com/assets/vtex.file-manager-graphql/images/e653984c-da3d-4b13-a74e-d5ce269c1e15___8fb4d09b20f7a62270dc3f26e37f4965.jpg",
+      "blockClass": "home-banner-promotions-mobile"
+    }
+  },
+  "image#home-banner-promotions-mobile-2": {
+    "props": {
+      "link": {
+        "url": "outlet"
+      },
+      "src": "https://custapoucoseduzir.vtexassets.com/assets/vtex.file-manager-graphql/images/459e559c-7f18-4c9d-aa0e-86bcffb97c5f___9b21b6d1c7ecaad16a1ce1026cb83489.png",
+      "blockClass": "home-banner-promotions-mobile"
+    }
+  },
+  "image#home-banner-promotions-mobile-3": {
+    "props": {
+      "link": {
+        "url": "/sex-shop/vibradores"
+      },
+      "src": "https://custapoucoseduzir.vtexassets.com/assets/vtex.file-manager-graphql/images/136b2c69-0281-46a0-95f7-27d2d441ab40___0f8b2bb56481694fd19eb1f38741c4f6.jpg",
+      "blockClass": "home-banner-promotions-mobile"
+    }
+  }
+}

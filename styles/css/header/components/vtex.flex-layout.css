@@ -1,0 +1,26 @@
+/* PRE HEADER */
+
+.flexRow--preHeader-top {
+  overflow: hidden !important;
+}
+
+.flexRowContent--preHeader-top {
+  background-color: #111111;
+  width: 100%;
+  padding: 10px 0;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  /* DONT REMOVE */
+  overflow: hidden !important;
+}
+
+@media (max-width: 1025px) {
+  .flexRowContent--preHeader-top {
+    padding: 0 1rem;
+    justify-content: center;
+  }
+}

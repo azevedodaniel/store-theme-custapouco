@@ -1,0 +1,8 @@
+{
+	"countdown-timer": {
+		"component": "CountDownTimer"
+	},
+	"egoi-newsletter": {
+		"component": "Newsletter"
+	}
+}

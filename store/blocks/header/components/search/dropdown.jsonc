@@ -1,0 +1,48 @@
+{
+  "overlay-trigger#search-bar-dropdown": {
+    "children": ["icon#header-search", "overlay-layout#search-bar-dropdown"],
+    "props": {
+      "blockClass": "header-dropdown-search-bar"
+    }
+  },
+
+  "icon#header-search": {
+    "props": {
+      "id": "hpa-search",
+      "size": 26,
+      "color": "#fff",
+      "activeClassName": "white"
+    }
+  },
+
+  "overlay-layout#search-bar-dropdown": {
+    "props": {
+      "placement": "bottom",
+      "blockClass": "header-dropdown-search-bar",
+      "offsets": {
+        "distance": 10
+      }
+    },
+    "children": ["search-bar#header-dropdown-search-bar"]
+  },
+
+  "search-bar#header-dropdown-search-bar": {
+    "props": {
+      "openAutocompleteOnFocus": true,
+      "placeholder": "Buscar...",
+      "blockClass": "header-dropdown-search-bar"
+    }
+  },
+
+  "search-bar#header-mobile": {
+    "props": {
+      "autocompleteFullWidth": "true",
+      "placeholder": "Buscar",
+      "containerMode": "container",
+      "displayMode": "clear-button",
+      "iconClasses": "search-bar-icon",
+      "blockClass": "search-bar-ab"
+    },
+    "title": "Barra de busca"
+  }
+}

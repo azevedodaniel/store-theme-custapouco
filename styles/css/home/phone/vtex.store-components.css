@@ -1,0 +1,41 @@
+/* Slide fixed */
+.imageElementLink--image-categorias-lista {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageElement--image-categorias-lista {
+  width: 55px;
+  height: 55px;
+
+  border-radius: 100%;
+}
+
+/* Slide fixed FINAL */
+
+/* Brands */
+
+.imageElementLink--home-brands-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+
+  padding: 10px;
+}
+
+/* Brands FINAL */
+
+
+/* Category Images */
+
+.imageElement--home-category-images-mobile:last-child {
+  max-height: 290px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Category Images FINAL */

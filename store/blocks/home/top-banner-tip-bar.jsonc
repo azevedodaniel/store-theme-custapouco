@@ -1,0 +1,126 @@
+{
+  "experimental__visibility-layout#top-banner-tip-bar": {
+    "title": "Visibilidade Tip Bar",
+    "props": {
+      "visible": true
+    },
+    "children": ["flex-layout.row#top-banner-tip-bar"]
+  },
+
+  // ------------- Tip Bar -------------
+  "flex-layout.row#top-banner-tip-bar": {
+    "props": {
+      "blockClass": "top-banner-tip-bar",
+      "fullWidth": true,
+      "horizontalAlign": "center",
+      "preserveLayoutOnMobile": true,
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.row#tip-bar-col-1",
+      "flex-layout.row#tip-bar-col-2",
+      "flex-layout.row#tip-bar-col-3",
+      "flex-layout.row#tip-bar-col-4"
+    ]
+  },
+
+  // -- Col 1
+
+  "image#tip-bar-col-1-img": {
+    "props": {
+      "blockClass": "tip-bar-col-img",
+      "src": "assets/icons/breakable.png"
+    }
+  },
+
+  "rich-text#tip-bar-col-1-text": {
+    "props": {
+      "blockClass": "tip-bar-col-text",
+      "text": "## Embalagem Discreta \n Pacote sem informações"
+    }
+  },
+
+  "flex-layout.row#tip-bar-col-1": {
+    "props": {
+      "blockClass": "tip-bar-col",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
+    },
+    "children": ["image#tip-bar-col-1-img", "rich-text#tip-bar-col-1-text"]
+  },
+
+  // -- Col 2
+
+  "image#tip-bar-col-2-img": {
+    "props": {
+      "blockClass": "tip-bar-col-img",
+      "src": "assets/icons/overstock-sale.png"
+    }
+  },
+
+  "rich-text#tip-bar-col-2-text": {
+    "props": {
+      "blockClass": "tip-bar-col-text",
+      "text": "## Desconto de 15% Pix \n Pagamento simplificado"
+    }
+  },
+
+  "flex-layout.row#tip-bar-col-2": {
+    "props": {
+      "blockClass": "tip-bar-col",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
+    },
+    "children": ["image#tip-bar-col-2-img", "rich-text#tip-bar-col-2-text"]
+  },
+
+  // -- Col 3
+
+  "image#tip-bar-col-3-img": {
+    "props": {
+      "blockClass": "tip-bar-col-img",
+      "src": "assets/icons/tax.png"
+    }
+  },
+
+  "rich-text#tip-bar-col-3-text": {
+    "props": {
+      "blockClass": "tip-bar-col-text",
+      "text": "## Preço de Atacado \n Margem para Revenda"
+    }
+  },
+
+  "flex-layout.row#tip-bar-col-3": {
+    "props": {
+      "blockClass": "tip-bar-col",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
+    },
+    "children": ["image#tip-bar-col-3-img", "rich-text#tip-bar-col-3-text"]
+  },
+
+  // -- Col 4
+
+  "image#tip-bar-col-4-img": {
+    "props": {
+      "blockClass": "tip-bar-col-img",
+      "src": "assets/icons/bank-cards.png"
+    }
+  },
+
+  "rich-text#tip-bar-col-4-text": {
+    "props": {
+      "blockClass": "tip-bar-col-text",
+      "text": "## Compre em Até 10x \n Facilidade de pagamento"
+    }
+  },
+
+  "flex-layout.row#tip-bar-col-4": {
+    "props": {
+      "blockClass": ["tip-bar-col", "tip-bar-last-col"],
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
+    },
+    "children": ["image#tip-bar-col-4-img", "rich-text#tip-bar-col-4-text"]
+  }
+}

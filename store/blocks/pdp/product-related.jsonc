@@ -1,0 +1,57 @@
+{
+  "shelf.relatedProducts#qvvt": {
+    "blocks": ["product-summary.shelf#productPage"],
+    "props": {
+      "blockClass": "qvvt",
+      "recommendation": "view",
+      "productList": {
+        "titleText": "Produtos Recomendados",
+        "itemsPerPage": 5,
+        "minItemsPerPage": 2
+      }
+    }
+  },
+
+  "shelf.relatedProducts#qctb": {
+    "blocks": ["product-summary.shelf#productPage"],
+    "props": {
+      "blockClass": "qctb",
+      "recommendation": "suggestions",
+      "productList": {
+        "titleText": "Quem comprou, comprou também",
+        "itemsPerPage": 5,
+        "minItemsPerPage": 2
+      }
+    }
+  },
+
+  "product-summary.shelf#productPage": {
+    "props": {
+      "blockClass": "qvvt"
+    },
+    "children": [
+      "stack-layout#prodsum",
+      "flex-layout.row#product-tags",
+      "product-summary-name",
+      "flex-layout.row#productRatingRelated",
+      "flex-layout.row#selling-price-savings",
+      "product-installments#summary",
+      "add-to-cart-button#summary"
+    ]
+  },
+
+  "flex-layout.row#productRatingRelated": {
+    "props": {
+      "blockClass": "productRatingRelated"
+    },
+    "children": ["product-rating-inline"]
+  },
+
+  "list-context.product-list": {
+    "blocks": ["product-summary.shelf"],
+    "props": {
+      "hideUnavailableItems": true
+    },
+    "children": ["shelf.relatedProducts#qvvt", "shelf.relatedProducts#qctb"]
+  }
+}

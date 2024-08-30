@@ -1,0 +1,45 @@
+/* PRE HEADER SLIDER */
+.paragraph--frete-gratis-texto {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+
+  text-align: center;
+
+  color: #fff;
+
+  margin: 0;
+  padding: 0;
+}
+.image--frete-gratis-texto {
+  display: none;
+}
+.italic--frete-gratis-texto {
+  font-size: 10px;
+  padding: 0 10px;
+}
+.link--frete-gratis-texto {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+
+  text-align: center;
+
+  color: #fff;
+
+  margin: 0;
+  padding: 0;
+
+  text-decoration: none;
+}
+
+@media (max-width: 1025px) {
+  .paragraph--frete-gratis-texto {
+    padding: 8px 0;
+    min-width: 320px;
+  }
+}

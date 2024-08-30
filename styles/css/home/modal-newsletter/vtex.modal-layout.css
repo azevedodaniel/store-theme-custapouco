@@ -1,0 +1,53 @@
+.paper--modal__newsletter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
+  max-width: 800px;
+  height: 100%;
+  max-height: 522px;
+
+  background-image: url(https://custapoucoseduzir.vtexassets.com/assets/vtex/assets-builder/custapoucoseduzir.theme/5.0.22/imgs/modal-bg___9f451a46d46f5c34f910b1cd967df5ae.png);
+}
+
+.headerContainer--modal__newsletter {
+  border: none;
+}
+
+.contentContainer--modal__newsletter-signup {
+  position: absolute;
+  bottom: 55px;
+  left: 45px;
+
+  max-width: 350px;
+
+  margin: 0;
+  padding: 0;
+}
+
+.contentContainer--modal__newsletter-signup :global(.vtex-input__label) {
+  display: none;
+}
+
+@media ( max-width: 1024px ) {
+
+  .paper--modal__newsletter {
+    max-width: 320px;
+    max-height: 450px;
+
+    background-image: url(https://custapoucoseduzir.vtexassets.com/assets/vtex/assets-builder/custapoucoseduzir.theme/5.0.22/imgs/modal-bg-mobile2___9f451a46d46f5c34f910b1cd967df5ae.png);
+  }
+
+  .contentContainer--modal__newsletter-signup {
+    bottom: 20px;
+    left: 10px;
+    
+    max-width: 300px;
+  }
+
+}

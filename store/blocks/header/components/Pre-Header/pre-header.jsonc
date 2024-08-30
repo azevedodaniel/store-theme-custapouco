@@ -1,0 +1,66 @@
+{
+  // ---------- SLIDER LAYOUT FOR PRE HEADER ----------
+  "slider-layout#pre-header": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "autoplay": {
+        "timeout": 5000,
+        "stopOnHover": true
+      },
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "blockClass": "carousel-pre-header"
+    },
+    "children": [
+      "rich-text#pre-header-rich-text-1",
+      "rich-text#pre-header-rich-text-2",
+      "rich-text#pre-header-rich-text-3",
+      "rich-text#pre-header-rich-text-4"
+    ]
+  },
+
+  // Text 1
+  "rich-text#pre-header-rich-text-1": {
+    "props": {
+      "blockClass": "frete-gratis-texto",
+      "horizontalAlign": "center",
+      "text": "REVENDA COM **ALTA MARGEM DE LUCRO**"
+    },
+    "title": "Texto 1"
+  },
+
+  // Text 2
+  "rich-text#pre-header-rich-text-2": {
+    "props": {
+      "blockClass": "frete-gratis-texto",
+      "horizontalAlign": "center",
+      "text": "ATACADO DE LINGERIE E SEX SHOP"
+    },
+    "title": "Texto 2"
+  },
+
+  // Text 3
+  "rich-text#pre-header-rich-text-3": {
+    "props": {
+      "blockClass": "frete-gratis-texto",
+      "horizontalAlign": "center",
+      "text": "COMPRE ONLINE DIRETO DO BRÁS"
+    },
+    "title": "Texto 3"
+  },
+
+  // Text 3
+  "rich-text#pre-header-rich-text-4": {
+    "props": {
+      "blockClass": "frete-gratis-texto",
+      "horizontalAlign": "center",
+      "text": "NÃO PRECISA DE CNPJ"
+    },
+    "title": "Texto 4"
+  }
+}

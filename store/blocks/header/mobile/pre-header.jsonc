@@ -1,0 +1,15 @@
+{
+  "flex-layout.row#pre-header-mobile": {
+    "props": {
+      "blockClass": ["preHeader-top-mobile", "preHeader-top"],
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "fullWidth": true,
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    },
+    "children": ["slider-layout#pre-header"],
+    "title": "[SWIPER] Header Mob"
+  }
+}

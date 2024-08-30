@@ -1,0 +1,30 @@
+.searchBarInnerContainer--header-dropdown-search-bar {
+  border: none;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+
+  border-radius: 10px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.searchBarInnerContainer--header-dropdown-search-bar
+  :global(.vtex-input-prefix__group),
+.searchBarInnerContainer--header-dropdown-search-bar
+  :global(.vtex-input__prefix),
+.searchBarInnerContainer--header-dropdown-search-bar
+  :global(.vtex-styleguide-9-x-input),
+.searchBarInnerContainer--header-dropdown-search-bar
+  :global(.vtex-input__suffix) {
+  border: none !important;
+  background-color: transparent !important;
+  height: 30px;
+  color: #000 !important;
+}
+
+.searchBarInnerContainer--header-dropdown-search-bar
+  :global(.vtex-styleguide-9-x-input)::placeholder,
+.searchBarIcon--header-dropdown-search-bar--clear {
+  color: #000;
+}

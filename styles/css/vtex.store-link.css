@@ -1,0 +1,229 @@
+.link--popularLink,
+.link--trending-link {
+  margin-right: 40px;
+  text-decoration: none;
+}
+
+.label--popularLink,
+.label--trending-link {
+  color: var(--primary-default);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.label--trending-link::after {
+  content: url("assets/icons/chevronBlue.svg");
+  margin-left: 8px;
+  top: 1px;
+  position: relative;
+}
+
+.link--networkLink {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link--shopByLink {
+  width: 100%;
+  text-decoration: none;
+}
+
+
+.childrenContainer--shopByLink {
+  align-items: center;
+  border: none;
+  display: flex;
+  flex-flow: column nowrap;
+  height: 272px;
+  padding: 32px;
+}
+
+.childrenContainer--linkCategorySlider {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.link--linkCategorySlider {
+  text-decoration: none;
+}
+
+.link--blogLink {
+  display: block;
+  max-width: 100px;
+  width: 100%;
+  height: 32px;
+  font-size: 14px;
+  line-height: 32px;
+  text-align: center;
+  color: #0067c7;
+  background: #f3f9ff;
+  text-decoration: none;
+}
+
+.childrenContainer--linkMail,
+.childrenContainer--linkCall,
+.childrenContainer--linkCallPr{
+  align-items: center;
+  border-radius: 4px;
+  display: flex;
+  height: 48px;
+  justify-content: center;
+  margin: 0;
+  padding: 0px 20px;
+  max-width: 286px;
+  width: 100%;
+
+}
+
+.childrenContainer--linkCall {
+  background-color: var(--darkgrey-medium);
+}
+
+.childrenContainer--linkCallPr {
+  background-color: #25d366;
+}
+
+.childrenContainer--linkMail {
+  border: 1px solid var(--darkgrey-medium);
+}
+
+.link--linkCall,
+.link--linkCallPr,
+.link--linkMail {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.link--linkCallPr :global(.vtex-store-components-3-x-imageElement),
+.link--linkCall :global(.vtex-store-components-3-x-imageElement),
+.link--linkMail :global(.vtex-store-components-3-x-imageElement) {
+  margin-right: 12px;
+}
+
+.link--linkMail,
+.link--linkCallPr,
+.link--linkCall {
+  margin-bottom: 16px;
+}
+
+.link--quickLink {
+  text-decoration: none;
+  position: relative;
+}
+
+.link--quickLink::after {
+  content: url("assets/icons/nav-arrow-right.svg");
+  display: block;
+  position: absolute;
+  color: #717786;
+  right: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.link--quickOrderButton {
+  text-decoration: none;
+  padding: 24px;
+  background: #f2f5f9;
+  border: 1px solid #dee7ef;
+  display: block;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.link--quickOrderButton::after {
+  content: url("assets/icons/nav-arrow-right-blue.svg");
+  display: block;
+  position: absolute;
+  color: #717786;
+  right: 12px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.link--orderQuote {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  height: 100%;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.link--footerLink {
+  color: #000000;
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 14px;
+  text-decoration: none;
+}
+
+
+@media (max-width: 90rem) {
+
+  .link--popularLink,
+  .link--trending-link {
+    display: none;
+    margin-right: 0;
+  }
+
+  .childrenContainer--accountLink :global(.vtex-store-icons-0-x-profileIcon) {
+    width: 20px;
+    height: 20px;
+  }
+
+
+  .link--networkLink {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .childrenContainer--shopByLink  {
+    height: 152px;
+    max-width: 107px;
+    padding: 16px;
+  }
+}
+
+/* BEGIN - Landing Page */
+.link--landingButton {
+  background-color: var(--primary-default);
+  height: 49px;
+  margin-bottom: 32px;
+  max-width: 248px;
+  width: 100%;
+}
+
+.label--landingButton {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 17px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 90rem) {
+  .link--landingButton {
+    max-width: none;
+  }
+}
+/* END - Landing Page */

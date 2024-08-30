@@ -1,0 +1,12 @@
+.caretIcon--fresh-blue {
+  color: var(--fresh-blue);
+}
+
+.caretIcon--lines-darker {
+  color: var(--lines-darker);
+}
+
+.cartIcon--minicart-empty-state {
+  color: var(--primary-default);
+  margin-bottom: 8px;
+}

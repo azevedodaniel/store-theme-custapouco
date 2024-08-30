@@ -1,0 +1,125 @@
+.container {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  border-radius: 0;
+}
+
+.element {
+  margin: 0;
+  padding: 0;
+}
+
+.nameContainer {
+  margin: 10px 0;
+  padding: 0;
+  justify-content: flex-start;
+}
+
+.productNameContainer {
+  text-align: left;
+}
+
+.productNameContainer .productBrand{
+  font-family: 'Cairo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.spacer {
+  display: none;
+}
+
+.container :global(.vtex-flex-layout-0-x-flexRowContent--priceWithDiscount) {
+  align-items: baseline;
+  margin-bottom: 0;
+}
+
+.container :global(.vtex-flex-layout-0-x-flexCol--productRating) {
+  margin-bottom: 10px;
+}
+
+.container :global(.vtex-flex-layout-0-x-flexColChild--productInfo) {
+  text-align: left;
+  height: auto !important;
+}
+
+.container
+  :global(.vtex-product-price-1-x-spotPriceValue--summary)
+  :global(.vtex-product-price-1-x-currencyCode--summary),
+.container
+  :global(.vtex-product-price-1-x-spotPriceValue--summary)
+  :global(.vtex-product-price-1-x-currencyFraction--summary),
+.container
+  :global(.vtex-product-price-1-x-spotPriceValue--summary)
+  :global(.vtex-product-price-1-x-currencyInteger--summary),
+.container
+  :global(.vtex-product-price-1-x-spotPriceValue--summary)
+  :global(.vtex-product-price-1-x-installmentsNumber--summary),
+.container
+  :global(.vtex-product-price-1-x-spotPriceValue--summary)
+  :global(.vtex-product-price-1-x-currencyDecimal--summary) {
+  font-weight: 800;
+  font-family: 'Cairo';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 16px;
+
+  color: #ab1c21;
+}
+
+.container :global(.vtex-product-price-1-x-installments),
+.container :global(.vtex-product-price-1-x-installments--usingByPromotion) {
+  font-family: 'Cairo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+
+  color: #ab1c21;
+}
+
+.container :global(.vtex-product-price-1-x-installments--summary) {
+  font-family: 'Cairo';
+  font-style: normal;
+  font-weight: 400 !important;
+  font-size: 12px !important;
+  line-height: 16px;
+
+  color: #666666;
+  text-align: left;
+}
+
+.container
+  :global(.vtex-button):not(:global(.vtex-wish-list-1-x-wishlistIconContainer)
+    :global(.vtex-button)) {
+  background: linear-gradient(135deg, #cb2026 0%, #7f0307 100%);
+  border-radius: 100px;
+  transition: filter 300ms;
+  border: none !important;
+  margin-top: auto;
+}
+
+.container :global(.vtex-button):hover {
+  filter: brightness(1.2);
+  border: none !important;
+}
+
+.container :global(.vtex-add-to-cart-button-0-x-buttonText){
+  font-family: 'Cairo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+
+  color: #ffffff;
+}
+
+.buyButtonContainer { margin-top: auto; }
+.hoverImage { z-index: 0; }
+.element--product-list-layout :global(.vtex-product-highlights-2-x-productHighlightWrapper--collection) { display: none }

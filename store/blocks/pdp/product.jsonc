@@ -1,0 +1,272 @@
+{
+  "store.product": {
+    "children": [
+      "flex-layout.row#product-breadcrumb",
+      "condition-layout.product#availability",
+      "shelf.relatedProducts#suggestions",
+      "product-specification-group#table",
+      "product-questions-and-answers",
+      "shelf.relatedProducts#qvvt"
+    ]
+  },
+
+  "flex-layout.row#specifications-title": {
+    "children": ["rich-text#specifications"]
+  },
+  "rich-text#specifications": {
+    "props": {
+      "text": "##### Especificações do Produto"
+    }
+  },
+  "flex-layout.row#product-breadcrumb": {
+    "props": {
+      "marginTop": 4,
+      "blockClass": "productDetailPage"
+    },
+    "children": ["breadcrumb"]
+  },
+  "flex-layout.row#description": {
+    "props": {
+      "marginBottom": 7
+    },
+    "children": ["product-description"]
+  },
+
+  "product-description": {
+    "props": {
+      "blockClass": "description",
+      "showTitle": true,
+      "collapseContent": false
+    }
+  },
+
+  "condition-layout.product#availability": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "isProductAvailable"
+        }
+      ],
+      "Then": "flex-layout.row#product-main",
+      "Else": "flex-layout.row#product-availability"
+    }
+  },
+  "flex-layout.row#product-main": {
+    "props": {
+      "colGap": 7,
+      "rowGap": 7,
+      "marginTop": 4,
+      "marginBottom": 7,
+      "paddingTop": 7,
+      "paddingBottom": 7,
+      "blockClass": "productDetailPage"
+    },
+    "children": ["flex-layout.col#stack", "flex-layout.col#right-col"]
+  },
+
+  "stack-layout": {
+    "props": {
+      "blockClass": "product"
+    },
+    "children": [
+      "flex-layout.row#product-image",
+      "product-bookmark",
+      "product-specification-badges"
+    ]
+  },
+
+  "product-specification-badges": {
+    "props": {
+      "specificationGroupName": "Group",
+      "specificationName": "On Sale",
+      "visibleWhen": "True",
+      "displayValue": "SPECIFICATION_NAME"
+    }
+  },
+
+  "flex-layout.col#stack": {
+    "children": ["stack-layout"],
+    "props": {
+      "width": "60%",
+      "rowGap": 0
+    }
+  },
+  "flex-layout.row#product-image": {
+    "children": ["product-images"]
+  },
+  "product-images": {
+    "props": {
+      "ModalZoom": "modal-layout#product-zoom",
+
+      "aspectRatio": {
+        "desktop": "auto",
+        "phone": "16:9"
+      },
+      "displayThumbnailsArrows": true
+    }
+  },
+
+  "product-images.high-quality-image": {
+    "props": {
+      "zoomMode": "in-place-click",
+      "zoomFactor": 2
+    }
+  },
+  "modal-layout#product-zoom": {
+    "children": [
+      "flex-layout.row#product-name",
+      "product-images.high-quality-image"
+    ]
+  },
+
+  "flex-layout.col#right-col": {
+    "props": {
+      "preventVerticalStretch": true,
+      "rowGap": 0
+    },
+    "children": [
+      "flex-layout.row#product-name",
+      "product-rating-summary",
+      "flex-layout.row#list-price-savings",
+      "flex-layout.row#selling-price",
+      "product-installments#summary",
+      "productgrid",
+      "sizetable",
+      "product-assembly-options",
+      "product-gifts",
+      "availability-subscriber",
+      "shipping-simulator#1",
+      "flex-layout.row#callProdutc",
+      "flex-layout.row#iconsInfo",
+      "disclosure-layout-group#product"
+    ]
+  },
+
+  "flex-layout.row#iconsInfo": {
+    "props": {
+      "blockClass": "iconsInfo",
+      "marginBottom": 3
+    },
+    "children": [
+      "rich-text#notification-bar-prod1",
+      "rich-text#notification-bar-prod2"
+    ]
+  },
+
+  "rich-text#notification-bar-prod1": {
+    "props": {
+      "blockClass": "carousel-notification-pr",
+      "text": "![CPS](assets/icons/cartIconB2B.svg)  **ENTREGA EM ATÉ 24H** \n Entrega em até 1 dia útil"
+    }
+  },
+  "rich-text#notification-bar-prod2": {
+    "props": {
+      "blockClass": "carousel-notification-pr",
+      "text": "![CPS](assets/icons/cartIcon.svg) **TROCA GARANTIDA** \n Confira nossa Política de Trocas e Devoluções"
+    }
+  },
+
+  "flex-layout.row#callProdutc": {
+    "props": {
+      "blockClass": "callProdutc",
+      "marginBottom": 3
+    },
+    "children": ["link#callProdutc"]
+  },
+
+  "link#callProdutc": {
+    "children": ["image#mailIcon", "rich-text#callpr"],
+    "props": {
+      "href": "tel:+1999999999",
+      "target": "_blank",
+      "blockClass": "linkCallPr"
+    }
+  },
+
+  "rich-text#callpr": {
+    "props": {
+      "text": "Compre pelo Whats",
+      "blockClass": "callTo"
+    }
+  },
+
+  "flex-layout.row#product-name": {
+    "props": {
+      "marginBottom": 3
+    },
+    "children": ["vtex.store-components:product-name"]
+  },
+
+  "sku-selector": {
+    "props": {
+      "showValueForVariation": "all",
+      "variationsSpacing": 3,
+      "thumbnailImage": "imageLabel",
+      "displayMode": "default"
+      // "showValueNameForImageVariation": false
+    }
+  },
+
+  "shipping-simulator#1": {
+    "props": {
+      "blockClass": "shipping-simulator-pdp",
+      "props": {
+        "shouldUpdateOrderForm": true
+      }
+    }
+  },
+
+  "flex-layout.row#product-availability": {
+    "props": {
+      "colGap": 7,
+      "marginTop": 4,
+      "marginBottom": 7,
+      "paddingTop": 7
+    },
+    "children": [
+      "flex-layout.col#stack",
+      "flex-layout.col#right-col-availability"
+    ]
+  },
+  "flex-layout.col#right-col-availability": {
+    "props": {
+      "preventVerticalStretch": true,
+      "rowGap": 0,
+      "blockClass": "info-availability"
+    },
+    "children": [
+      "flex-layout.row#product-name",
+      "product-identifier.product",
+      "sku-selector",
+      "flex-layout.row#availability"
+    ]
+  },
+  "flex-layout.row#availability": {
+    "props": {
+      "blockClass": "message-availability"
+    },
+    "children": ["availability-subscriber"]
+  },
+
+  "share#default": {
+    "props": {
+      "social": {
+        "Facebook": true,
+        "WhatsApp": true,
+        "Twitter": false,
+        "Pinterest": true
+      }
+    }
+  },
+
+  "shelf.relatedProducts#suggestions": {
+    "blocks": ["product-summary.shelf"],
+    "props": {
+      "recommendation": "viewandBought",
+      "productList": {
+        "titleText": "Related Products",
+        "itemsPerPage": 20
+      }
+    }
+  }
+}

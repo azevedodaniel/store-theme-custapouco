@@ -1,0 +1,9 @@
+.container--header-dropdown-search-bar,
+:global(.vtex-store-components-3-x-searchBarContainer) {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.trigger--header-dropdown-search-bar {
+  display: flex;
+}

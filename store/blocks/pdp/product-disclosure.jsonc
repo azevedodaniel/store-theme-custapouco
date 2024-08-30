@@ -1,0 +1,58 @@
+{
+
+  "disclosure-layout-group#product": {
+    "children": [
+      "disclosure-layout#product-first"
+    ]
+  },
+
+  "disclosure-layout#product-first": {
+    "props": {
+      "animated": true,
+      "initialVisibility":"visible"
+    },
+    "children": ["disclosure-trigger#product-first", "disclosure-content#product-first"]
+  },
+  "disclosure-trigger#product-first": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator#product", "rich-text#question1-product"]
+  },
+  "disclosure-content#product-first": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": [
+      "product-description",
+      "product-reviews"
+
+    ]
+  },
+  "rich-text#question1-product": {
+    "props": {
+      "text": "### Descrição & Avaliações:"
+    }
+  },
+  
+
+  // icons
+
+  "disclosure-state-indicator#product": {
+    "props": {
+      "Show": "icon-caret#down-product",
+      "Hide": "icon-caret#up-product"
+    }
+  },
+  "icon-caret#down-product": {
+    "props": {
+      "orientation": "down"
+    }
+  },
+  "icon-caret#up-product": {
+    "props": {
+      "orientation": "up"
+    }
+  }
+}

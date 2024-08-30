@@ -1,0 +1,240 @@
+{
+  "flex-layout.row#home-category-fixed-mobile": {
+    "props": {
+      "blockClass": "home-category-fixed-mobile"
+    },
+    "children": [
+      "slider-layout#slide-categorias-lista-mobile"
+    ]
+  },
+  "slider-layout#slide-categorias-lista-mobile": {
+    "title": "Slider Categorias Fixo",
+    "props": {
+      "itemsPerPage": {
+        "phone": 5
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "mobileOnly",
+      "blockClass": "slide-categorias-lista-mobile"
+    },
+    "children": [
+      "flex-layout.col#slide-categorias-lista-mobile-1",
+      "flex-layout.col#slide-categorias-lista-mobile-2",
+      "flex-layout.col#slide-categorias-lista-mobile-3",
+      "flex-layout.col#slide-categorias-lista-mobile-4",
+      "flex-layout.col#slide-categorias-lista-mobile-5",
+      "flex-layout.col#slide-categorias-lista-mobile-6",
+      "flex-layout.col#slide-categorias-lista-mobile-7",
+      "flex-layout.col#slide-categorias-lista-mobile-8"
+    ]
+  },
+  "flex-layout.col#slide-categorias-lista-mobile-1": {
+    "children": [
+      "image#foto-slide-categorias-lista-mobile-1",
+      "rich-text#slide-categorias-lista-mobile-1"
+    ]
+  },
+  "flex-layout.col#slide-categorias-lista-mobile-2": {
+    "children": [
+      "image#foto-slide-categorias-lista-mobile-2",
+      "rich-text#slide-categorias-lista-mobile-2"
+    ]
+  },
+  "flex-layout.col#slide-categorias-lista-mobile-3": {
+    "children": [
+      "image#foto-slide-categorias-lista-mobile-3",
+      "rich-text#slide-categorias-lista-mobile-3"
+    ]
+  },
+  "flex-layout.col#slide-categorias-lista-mobile-4": {
+    "children": [
+      "image#foto-slide-categorias-lista-mobile-4",
+      "rich-text#slide-categorias-lista-mobile-4"
+    ]
+  },
+  "flex-layout.col#slide-categorias-lista-mobile-5": {
+    "children": [
+      "image#foto-slide-categorias-lista-mobile-5",
+      "rich-text#slide-categorias-lista-mobile-5"
+    ]
+  },
+  "flex-layout.col#slide-categorias-lista-mobile-6": {
+    "children": [
+      "image#foto-slide-categorias-lista-mobile-6",
+      "rich-text#slide-categorias-lista-mobile-6"
+    ]
+  },
+  "flex-layout.col#slide-categorias-lista-mobile-7": {
+    "children": [
+      "image#foto-slide-categorias-lista-mobile-7",
+      "rich-text#slide-categorias-lista-mobile-7"
+    ]
+  },
+  "flex-layout.col#slide-categorias-lista-mobile-8": {
+    "children": [
+      "image#foto-slide-categorias-lista-mobile-8",
+      "rich-text#slide-categorias-lista-mobile-8"
+    ]
+  },
+  "image#foto-slide-categorias-lista-mobile-1": {
+    "title": "Categoria 1",
+    "props": {
+      "blockClass": "image-categorias-lista",
+      "src": "https://as2.ftcdn.net/v2/jpg/04/19/30/97/1000_F_419309754_SrxVJjD5v5OwYiZ5UIqwMbWiCtl05oZO.jpg",
+      "link": {
+        "attributeTitle": "Sex Shop",
+        "url": "/Sex-Shop??order=OrderByTopSaleDESC"
+      }
+    }
+  },
+  "rich-text#slide-categorias-lista-mobile-1": {
+    "title": "Título Categoria 1",
+    "props": {
+      "blockClass": "text-categorias-lista",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Sex Shop"
+    }
+  },
+  "image#foto-slide-categorias-lista-mobile-2": {
+    "title": "Categoria 2",
+    "props": {
+      "blockClass": "image-categorias-lista",
+      "src": "https://cdn.dooca.store/454/files/banner-home-03-1.jpg?v=1680272394",
+      "link": {
+        "attributeTitle": "Plus Size",
+        "url": "/plus%20size?map=ft"
+      }
+    }
+  },
+  "rich-text#slide-categorias-lista-mobile-2": {
+    "title": "Título Categoria 2",
+    "props": {
+      "blockClass": "text-categorias-lista",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Plus Size"
+    }
+  },
+  "image#foto-slide-categorias-lista-mobile-3": {
+    "title": "Categoria 3",
+    "props": {
+      "blockClass": "image-categorias-lista",
+      "src": "https://www.fruitdelapassion.com.br/arquivos/3fotobanner-3.jpg?v=637874558579900000",
+      "link": {
+        "attributeTitle": "Pijamas",
+        "url": "/Pijamas"
+      }
+    }
+  },
+  "rich-text#slide-categorias-lista-mobile-3": {
+    "title": "Título Categoria 3",
+    "props": {
+      "blockClass": "text-categorias-lista",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Pijamas"
+    }
+  },
+  "image#foto-slide-categorias-lista-mobile-4": {
+    "title": "Categoria 4",
+    "props": {
+      "blockClass": "image-categorias-lista",
+      "src": "https://839028l.ha.azioncdn.net/img/2022/08/produto/8101/66527-007-1460-f.jpg?ims=700x1000",
+      "link": {
+        "attributeTitle": "Moda Praia",
+        "url": "/moda-praia"
+      }
+    }
+  },
+  "rich-text#slide-categorias-lista-mobile-4": {
+    "title": "Título Categoria 4",
+    "props": {
+      "blockClass": "text-categorias-lista",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Moda Praia"
+    }
+  },
+  "image#foto-slide-categorias-lista-mobile-5": {
+    "title": "Categoria 5",
+    "props": {
+      "blockClass": "image-categorias-lista",
+      "src": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/965/764/products/2e1fdced00091493ba1b2b3a293abeb1-2619e7d148c193e09f16389687874854-640-0.jpg",
+      "link": {
+        "attributeTitle": "Fantasias",
+        "url": "/Sex-Shop/Fantasias"
+      }
+    }
+  },
+  "rich-text#slide-categorias-lista-mobile-5": {
+    "title": "Título Categoria 5",
+    "props": {
+      "blockClass": "text-categorias-lista",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Fantasias"
+    }
+  },
+  "image#foto-slide-categorias-lista-mobile-6": {
+    "title": "Categoria 6",
+    "props": {
+      "blockClass": "image-categorias-lista",
+      "src": "https://cdn.shopify.com/s/files/1/1169/7228/files/Lingerie_Sets_14756150-6793-4c68-acaf-278cfa998a59.png?v=1683017856",
+      "link": {
+        "attributeTitle": "Coleções",
+        "url": "/Coleção-Apaixonante/"
+      }
+    }
+  },
+  "rich-text#slide-categorias-lista-mobile-6": {
+    "title": "Título Categoria 6",
+    "props": {
+      "blockClass": "text-categorias-lista",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Coleções"
+    }
+  },
+  "image#foto-slide-categorias-lista-mobile-7": {
+    "title": "Categoria 7",
+    "props": {
+      "blockClass": "image-categorias-lista",
+      "src": "https://down-br.img.susercontent.com/file/br-11134201-22120-n2zenquulalv3c_tn",
+      "link": {
+        "attributeTitle": "Outlet",
+        "url": "/outlet"
+      }
+    }
+  },
+  "rich-text#slide-categorias-lista-mobile-7": {
+    "title": "Título Categoria 7",
+    "props": {
+      "blockClass": "text-categorias-lista",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Outlet"
+    }
+  },
+  "image#foto-slide-categorias-lista-mobile-8": {
+    "title": "Categoria 8",
+    "props": {
+      "blockClass": "image-categorias-lista",
+      "src": "https://a-static.mlcdn.com.br/800x560/cueca-boxer-ions-de-prata-2-unidades-p-e-energy/gsflexprodutosterapeuticos/df42f108ffa011ec92274201ac185079/d91e3b47821d6656c6b0ec357760ee99.jpg",
+      "link": {
+        "attributeTitle": "Moda Masculinna",
+        "url": "/lingerie/cueca"
+      }
+    }
+  },
+  "rich-text#slide-categorias-lista-mobile-8": {
+    "title": "Título Categoria 8",
+    "props": {
+      "blockClass": "text-categorias-lista",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Moda Masculinna"
+    }
+  }
+}

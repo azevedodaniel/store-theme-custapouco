@@ -1,0 +1,134 @@
+//Modal de News
+{
+  "experimental__visibility-layout#modal-news-home": {
+    "title": "Modal de Newsletter",
+    "children": ["modal-trigger#signup"]
+  },
+  "modal-trigger#signup": {
+    "children": ["modal-layout#signup"],
+    "props": {
+      "trigger": "load-session",
+      "timerToShow": 5000
+    }
+  },
+  "modal-layout#signup": {
+    "props": {
+      "blockClass": "modal__newsletter"
+    },
+    "children": ["modal-header#signup", "modal-content#signup"]
+  },
+  "modal-header#signup": {
+    "props": {
+      "iconCloseSize": 18,
+      "blockClass": "modal__newsletter"
+    }
+  },
+  "modal-content#signup": {
+    "children": [
+      "flex-layout.row#modal-signup"
+    ],
+    "props": {
+      "blockClass": "modal__newsletter-signup"
+    }
+  },
+  "flex-layout.row#modal-signup": {
+    "children": ["flex-layout.col#news-modal-form"],
+    "props": {
+      "blockClass": "modal__newsletter"
+    }
+  },
+  "flex-layout.col#news-modal-form": {
+    "children": ["form#nl"],
+    "props": {
+      "blockClass": "modal__newsletter"
+    }
+  },
+  "form#nl": {
+    "props": {
+      "entity": "NL",
+      "schema": "Newsletter"
+    },
+    "blocks": ["form-success#nl"],
+    "children": [
+      "flex-layout.col#nl-modal-signup",
+      "flex-layout.row#nl-modal-signup-terms"
+    ]
+  },
+  "flex-layout.col#nl-modal-signup": {
+    "children": [
+      "form-input.text#nl-email",
+      "flex-layout.row#nl-modal-signup" 
+    ],
+    "props": {
+      "blockClass": "nl-modal-signup-col"
+    }
+  },
+  "flex-layout.row#nl-modal-signup": {
+    "children": [
+      "form-input.text#nl-whatsapp",
+      "form-input.text#nl-name"
+    ],
+    "props": {
+      "blockClass": "nl-modal-signup-row"
+    }
+  },
+  "form-input.text#nl-name": {
+    "props": {
+      "pointer": "#/properties/name",
+      "placeholder": "Seu nome",
+      "blockClass": "modal__input"
+    }
+  },
+  "form-input.text#nl-email": {
+    "props": {
+      "pointer": "#/properties/email",
+      "placeholder": "Seu e-mail",
+      "blockClass": "modal__input"
+    }
+  },
+  "form-input.text#nl-whatsapp": {
+    "props": {
+      "pointer": "#/properties/whatsapp",
+      "placeholder": "Seu WhatsApp",
+      "blockClass": "modal__input"
+    }
+  },
+  "flex-layout.row#nl-modal-signup-terms": {
+    "children": [
+      "form-input.checkbox#nl-terms",
+      "rich-text#nl-terms-label",
+      "form-submit#nl"
+    ],
+    "props": {
+      "blockClass": "nl-modal-signup-terms"
+    }
+  },
+  "form-submit#nl": {
+    "props": {
+      "label": "Enviar",
+      "blockClass": "modal__submit"
+    }
+  },
+  "form-input.checkbox#nl-terms": {
+    "props": {
+      "pointer": "#/properties/terms"
+    }
+  },
+  "rich-text#nl-terms-label": {
+    "props": {
+      "text": "Aceito as [políticas de privacidade](/termos-de-uso)",
+      "blockClass":"nl-terms-label"
+    }
+  },
+  "form-success#nl": {
+    "children": ["rich-text#nl-success"]
+  },
+  "rich-text#nl-success": {
+    "props": {
+      "text": "E-mail cadastrado com sucesso!",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "modal__newsletter-success"
+    }
+  }
+}

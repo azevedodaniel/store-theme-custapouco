@@ -1,0 +1,67 @@
+{
+  "flex-layout.row#home-slider-logos": {
+    "props": {
+      "blockClass": "home-slider-logos-wrapper"
+    },
+    "children": [
+      "list-context.image-list#home-slider-logos"
+    ],
+    "title": "Slider Logos"
+  },
+
+  "list-context.image-list#home-slider-logos": {
+    "children": ["slider-layout#home-slider-logos"],
+    "props": {
+      "images": [
+        {
+          "image": "assets/imgs/loveh-ney.png",
+          "link": {
+            "url": "/loveh-ney"
+          },
+          "description": "Logo Loveh Ney"
+        },
+        {
+          "image": "assets/imgs/we-vibe.png",
+          "link": {
+            "url": "/we-vibe"
+          },
+          "description": "Logo We Vibe"
+        },
+        {
+          "image": "assets/imgs/womanizer.png",
+          "link": {
+            "url": "/womanizer"
+          },
+          "description": "Logo Womanizer"
+        },
+        {
+          "image": "assets/imgs/loka-sensacao.png",
+          "link": {
+            "url": "/loka-sensacao"
+          },
+          "description": "Logo Loka Sensação"
+        },
+        {
+          "image": "assets/imgs/loka-sensacao.png",
+          "link": {
+            "url": "/loka-sensacao"
+          },
+          "description": "Logo Loka Sensação"
+        }
+      ]
+    }
+  },
+  "slider-layout#home-slider-logos": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": false,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never",
+      "blockClass": "carousel-logo"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.clock-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  
+  padding: 16px 16px 0 16px;
+}
+
+.clock-days p,
+.clock-hours p,
+.clock-minutes p,
+.clock-seconds p{
+  padding: 0;
+  margin: 0;
+  color: white;
+  text-align: center;
+}
+
+.clock-days p:first-child,
+.clock-hours p:first-child,
+.clock-minutes p:first-child,
+.clock-seconds p:first-child{
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.clock-days p:last-child,
+.clock-hours p:last-child,
+.clock-minutes p:last-child,
+.clock-seconds p:last-child{
+  font-weight: 400;
+  font-size: 12px;
+}
+
+@media (max-width: 575px) {
+  .clock-container {
+    padding: 0 12px 12px 12px
+  }
+}

@@ -1,0 +1,365 @@
+.flexRow--top-banner-tip-bar {
+  background: rgba(227, 144, 119, 0.2);
+}
+
+.flexRowContent--top-banner-tip-bar {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 28px 0;
+  overflow: hidden;
+}
+
+.flexRowContent--tip-bar-col {
+  align-items: center;
+  gap: 12px;
+  padding: 0 30px;
+}
+
+.flexRowContent--tip-bar-col:not(.flexRowContent--tip-bar-last-col) {
+  border-right: 1px dashed #aa1d21;
+}
+
+@media (max-width: 1025px) {
+  :global(.vtex-store-components-3-x-imageElement--tip-bar-col-img) {
+    display: none;
+  }
+
+  .flexRowContent--top-banner-tip-bar {
+    overflow: scroll;
+  }
+}
+
+@media (max-width: 900px) {
+  .flexRowContent--top-banner-tip-bar {
+    justify-content: flex-start;
+  }
+}
+
+/* ---- HOME SLIDER LOGOS ---- */
+
+.flexRow--home-slider-logos-wrapper {
+  background-color: rgba(171, 27, 32, 0.05);
+  padding: 0 1rem;
+}
+
+/* ---- HOME SLIDER LOGOS END ---- */
+
+/* ---- HOME SLIDER HOT ---- */
+
+.flexRow--home-slider-hot-wrapper {
+  margin: 70px 0 !important;
+  padding: 0 1rem;
+}
+
+.flexRowContent--home-slider-hot-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flexRowContent--home-slider-hot {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.flexRow--home-slider-hot {
+  background-color: #ab1b20;
+  border-radius: 100px;
+  position: relative;
+  top: -31px;
+  width: fit-content;
+
+  margin: 0 auto;
+}
+
+.flexCol--home-slider-hot {
+  border-top: 1px solid #f9e9e4;
+  border-bottom: 1px solid #f9e9e4;
+}
+
+/* ---- HOME SLIDER HOT END ---- */
+
+/* ---- MEDIA-QUERY ---- */
+
+@media (max-width: 1024px) {
+  .flexRow--home-slider-hot {
+    top: -40px;
+  }
+}
+/* BANNERS SEX SHOP - HOME */
+.flexRow--banners-sexshop {
+  margin-bottom: 50px;
+}
+.flexCol--banners-sexshop-coluna1
+  :global(.vtex-store-components-3-x-imageElement) {
+  width: 100%;
+}
+.flexCol--banners-sexshop-coluna2
+  :global(.vtex-store-components-3-x-imageElement) {
+  width: 100%;
+}
+.flexCol--banners-sexshop-coluna2
+  :global(.vtex-store-components-3-x-imageElement):first-child {
+  margin-bottom: 6px;
+}
+/* FIM - BANNERS SEX SHOP - HOME */
+
+/* LISTAGEM SEX SHOP HOME */
+.flexRow--lista-sexshop {
+  margin-bottom: 100px;
+}
+.flexRow--lista-sexshop :global(.vtex-flex-layout-0-x-flexColChild) {
+  text-align: center;
+}
+.flexRow--lista-sexshop
+  :global(.vtex-flex-layout-0-x-flexColChild)
+  :global(.vtex-store-link-0-x-link) {
+  display: inline-block;
+  border: solid 1px #ab1c21;
+  border-radius: 30px;
+  padding: 10px 20px;
+  color: #ab1c21;
+  font-size: 16px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+.flexRow--lista-sexshop
+  :global(.vtex-flex-layout-0-x-flexColChild)
+  :global(.vtex-store-link-0-x-link):hover {
+  background: #ab1c21;
+  color: #fff;
+  transition: 0.5s;
+}
+/* FIM --- LISTAGEM SEX SHOP HOME */
+
+.flexRow--slide-categorias {
+  background: url(assets/imgs/bg-section-categorias.png) center center no-repeat
+    #f9e9e4;
+  background-size: cover;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+/* BARRA DE COLECAO DA HOME */
+.flexRow--section-colecoes {
+  background-image: url(assets/imgs/pattern_colecao.png);
+  background-position: left top;
+  background-color: #ab1b20;
+  padding-top: 100px;
+  margin-bottom: 150px;
+  position: relative;
+}
+.flexRow--section-colecoes::before {
+  content: ' ';
+  display: block;
+  width: 100%;
+  height: 1px;
+  border-bottom: solid 1px #ab1c21;
+  position: absolute;
+  left: 0;
+  top: 30px;
+}
+.flexRow--section-colecoes::after {
+  content: ' ';
+  display: block;
+  width: 100%;
+  height: 1px;
+  border-bottom: solid 1px #ab1c21;
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+  z-index: 1;
+}
+.flexRow--lista-colecoes {
+  margin-bottom: -100px;
+  z-index: 2;
+  position: relative;
+}
+.flexRow--colecao-destaque {
+  margin-bottom: 100px;
+}
+.flexRow--colecao-destaque .stretchChildrenWidth:first-child {
+  width: 33.33% !important;
+  display: block;
+}
+.flexRow--colecao-destaque .stretchChildrenWidth:last-child {
+  width: 66.66% !important;
+}
+.flexCol--colecao-destaque {
+  height: 450px;
+}
+.flexCol--colecao-destaque .flexColChild--colecao-destaque {
+  width: 100%;
+}
+.flexCol--colecao-destaque .flexColChild--colecao-destaque:first-child {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #000;
+}
+.flexCol--colecao-destaque
+  .flexColChild--colecao-destaque:first-child
+  :global(.vtex-store-components-3-x-imageElement) {
+  height: 100%;
+  width: 100%;
+  opacity: 0.4;
+  transition: 1s;
+  object-fit: cover;
+  object-position: center;
+}
+.flexCol--colecao-destaque
+  .flexColChild--colecao-destaque:first-child
+  :global(.vtex-store-components-3-x-imageElement):hover {
+  opacity: 1;
+}
+.flexCol--colecao-destaque .flexColChild--colecao-destaque:last-child {
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+}
+.flexCol--colecao-destaque
+  .flexColChild--colecao-destaque:last-child
+  :global(.vtex-rich-text-0-x-container) {
+  height: 100%;
+}
+
+.flexCol--colecao-destaque:hover
+  :global(.vtex-rich-text-0-x-wrapper--chamada-colecao-destaque) {
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+  margin-bottom: 50%;
+  transition: 1s;
+}
+.flexCol--colecao-destaque:hover
+  .flexColChild--colecao-destaque:last-child
+  :global(.vtex-rich-text-0-x-italic--chamada-colecao-destaque) {
+  display: block;
+}
+/* FIM --- BARRA DE COLECAO DA HOME */
+
+/* BANNERS PROMOCOES HOME */
+.flexRowContent--banner-promocoes .stretchChildrenWidth {
+  width: 33.33% !important;
+}
+.flexRowContent--banner-promocoes
+  :global(.vtex-store-components-3-x-imageElement) {
+  width: 100%;
+  margin-bottom: -4px;
+}
+/* FIM --- BANNERS PROMOCOES HOME */
+
+/* SECTION PRODUTOS EM DESTAQUE FINAL HOME */
+.flexRow--destaque-final-home .stretchChildrenWidth:first-child {
+  background: none;
+}
+.flexRow--destaque-final-home .stretchChildrenWidth:first-child::after {
+  display: none !important;
+}
+.flexRow--destaque-final-home
+  .stretchChildrenWidth:first-child
+  :global(.vtex-store-components-3-x-imageElement) {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.flexCol--destaque-final-home {
+  padding: 50px;
+}
+.flexColChild--destaque-final-home {
+  height: auto !important;
+}
+.flexCol--destaque-final-home {
+  justify-content: center;
+}
+/* FIM --- SECTION PRODUTOS EM DESTAQUE FINAL HOME */
+
+@media (max-width: 767px) {
+  .flexRowContent--banners-sexshop {
+    display: block;
+  }
+  .flexRowContent--banners-sexshop .stretchChildrenWidth {
+    width: 100% !important;
+  }
+  .flexRowContent--banners-sexshop .stretchChildrenWidth:first-child {
+    margin: 0;
+    padding: 0;
+  }
+  .flexCol--banners-sexshop-coluna2 .flexColChild--banners-sexshop-coluna2 {
+    padding: 0;
+  }
+  .flexCol--banners-sexshop-coluna2
+    .flexColChild--banners-sexshop-coluna2
+    :global(.vtex-store-components-3-x-imageElement) {
+    margin: 0;
+  }
+
+  .flexRowContent--lista-colecoes {
+    flex-wrap: wrap !important;
+  }
+  .flexRowContent--lista-colecoes .stretchChildrenWidth {
+    width: 50% !important;
+  }
+
+  .flexRowContent--banner-promocoes {
+    display: block;
+  }
+  .flexRowContent--banner-promocoes .stretchChildrenWidth {
+    width: 100% !important;
+  }
+
+  .flexRowContent--destaque-final-home .stretchChildrenWidth:first-child {
+    display: none;
+  }
+  .flexRowContent--destaque-final-home .stretchChildrenWidth:last-child {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .flexRow--lista-sexshop {
+    margin-bottom: 50px;
+  }
+  .flexRow--section-colecoes {
+    margin-bottom: 100px;
+  }
+  .flexRow--colecao-destaque {
+    margin-bottom: 0;
+  }
+  .flexCol--colecao-destaque {
+    height: 250px;
+  }
+
+  .flexRowContent--colecao-destaque .stretchChildrenWidth:first-child {
+    width: 100% !important;
+  }
+  .flexRowContent--colecao-destaque
+    .stretchChildrenWidth:first-child
+    :global(.vtex-store-components-3-x-imageElement) {
+    width: 100%;
+  }
+  .flexRowContent--colecao-destaque .stretchChildrenWidth:last-child {
+    width: 100% !important;
+  }
+  .flexRowContent--lista-colecoes {
+    display: flex;
+  }
+  .flexCol--destaque-final-home {
+    padding: 20px;
+    padding-bottom: 40px;
+  }
+
+  .flexRow--home-slider-hot {
+    top: -30px;
+    padding: 0 !important;
+    width: 100% !important;
+    border-radius: 60px !important;
+  }
+
+  .flexRowContent--home-slider-hot {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

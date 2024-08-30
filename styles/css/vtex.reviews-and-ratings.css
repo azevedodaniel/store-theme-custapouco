@@ -1,0 +1,33 @@
+.container {
+  max-width: 96rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  height: auto;
+}
+
+.inlineContainer {
+  margin-left: 0rem;
+  display: flex;
+  height: auto;
+}
+
+.star {
+  font-size: 16px;
+  height: auto;
+}
+
+.star--filled {
+  color: #f0c009;
+}
+
+.stars {
+  display: flex;
+}
+
+:global(.vtex-reviews-and-ratings-2-x-star--empty) {
+  color: var(--lightgrey-medium);
+}
+
+.reviewsHeading {
+  display: none;
+}

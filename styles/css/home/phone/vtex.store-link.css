@@ -1,0 +1,39 @@
+/* Links below the banner */
+.link--home-links-mobile-row {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 800;
+  text-align: center;
+
+  text-decoration: none;
+
+  background-color: #AB1C21;
+  color: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0;
+  padding: 15px 0;
+}
+
+/* Links below the banner FINAL */
+
+
+/* button lista mais Procurados */
+
+.link--button-listaMaisProcurados {
+  text-decoration: none;
+  border: 1px solid #AB1C21;
+  border-radius: 25px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  color: #AB1C21;
+  font-size: 16px;
+  margin: 0 10px;
+}
+
+/* button lista mais Procurados FINAL  */

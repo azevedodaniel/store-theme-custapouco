@@ -1,0 +1,42 @@
+/* LOGO HEADER NOT STUCK */
+
+.wrapper--header-desktop-sticky:not(.wrapper--header-desktop-sticky--stuck)
+  .container--header-desktop-sticky
+  :global(.vtex-store-components-3-x-logoContainer--header-logo-text) {
+  display: none;
+}
+
+.wrapper--header-desktop-sticky:not(.wrapper--header-desktop-sticky--stuck)
+  :global(.vtex-store-components-3-x-logoContainer--header-logo-lips) {
+  display: block;
+
+  max-width: 150px;
+  max-height: 75px;
+  min-width: 120px;
+}
+
+.wrapper--header-desktop-sticky:not(.wrapper--header-desktop-sticky--stuck)
+  :global(.vtex-flex-layout-0-x-flexRowContent--category-nav-buttons) {
+  display: none;
+}
+
+/* LOGO HEADER STUCK */
+
+.wrapper--header-desktop-sticky--stuck
+  .container--header-desktop-sticky
+  :global(.vtex-store-components-3-x-logoContainer--header-logo-text) {
+  display: block;
+
+  max-height: none !important;
+}
+
+.wrapper--header-desktop-sticky--stuck
+  .container--header-desktop-sticky
+  :global(.vtex-store-components-3-x-logoContainer--header-logo-lips) {
+  display: none;
+}
+
+.wrapper--header-desktop-sticky--stuck
+  :global(.vtex-flex-layout-0-x-flexRowContent--category-nav) {
+  gap: 24px;
+}

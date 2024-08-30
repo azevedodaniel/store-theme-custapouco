@@ -1,0 +1,29 @@
+.footerLayout {
+  /* background: var(--darkgrey-darker); */
+  background: #F5F5F5;
+}
+
+.footerLayout--relative {
+  position: relative;
+}
+
+
+.footerLayout--z-999 {
+  z-index: 999;
+}
+
+.footerLayout--z-998 {
+  z-index: 998;
+}
+
+.row--menu-row {
+  padding-right: 24px;
+}
+
+.row--menu-row .rowContainer {
+  align-items: flex-start;
+}
+
+.row--payment-methods {
+  padding-top: 16px;
+}

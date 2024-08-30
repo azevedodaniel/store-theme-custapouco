@@ -1,0 +1,11 @@
+
+
+.triggerButtonIcon{
+  color: var(--base) !important;
+}
+
+.triggerContainer::after{
+  content:"Todos os Departamentos";
+  color: var(--base) !important;
+  padding: 0 1rem;
+}

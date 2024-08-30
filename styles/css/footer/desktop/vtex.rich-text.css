@@ -1,0 +1,28 @@
+.paragraph--footerTitle {
+    margin: 0;
+    color:#AB1C21;
+    margin-bottom: 22px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bold;
+  }
+
+  .headingLevel2--contacts-col-text {
+    font-family: 'Inter'; 
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;  
+    color: #ab1b20;  
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .paragraph--contacts-col-text {
+    font-family: 'Inter'; 
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #666666;
+    margin: 0 !important;
+    padding: 0 !important;
+  }

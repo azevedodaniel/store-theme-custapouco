@@ -1,0 +1,18 @@
+
+.imageElement--copyright-col-1-img-mobile {
+    min-width: 50px;
+}
+
+.imageElement--copyright-col-3-img-mobile {
+    min-width: 86px;
+}
+
+.imageElement--copyright-col-4-img-mobile {
+    min-width: 60px;
+}
+
+.imageElementLink--botao-whatsapp-mobile { position: fixed; bottom: 10px; right: 10px; }
+
+.imageElement--paymentImage {
+    max-width: 80%;
+}

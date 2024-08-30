@@ -1,0 +1,29 @@
+.specificationName {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 100%;
+}
+
+.specificationValue {
+  color: var(--darkgrey-dark);
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+}
+
+.specificationName--bullet-list {
+  display: block;
+  columns: auto 2;
+  line-height: 2.5;
+  width: 100%;
+  white-space: pre-wrap;
+}
+
+.groupName {
+  font-size: 1.25rem;
+}
+
+.specificationName {
+  font-weight: bold;
+}

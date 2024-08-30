@@ -1,0 +1,31 @@
+.productHighlightWrapper--collection {
+  position: relative;
+  top: inherit;
+  left: inherit;
+  width: inherit;
+}
+
+.productHighlightText {
+  background: #CB2026;
+  color: #fff;
+
+  box-shadow: 0px 0px 0px 3px #CB2026;
+  border: 1px solid #fff;
+
+  border-radius: 20px;
+  padding: 3px 15px;
+}
+
+.productHighlightText[data-highlight-name="BLACK FRIDAY 2023"] {
+  background: #CB2026;
+  color: #fff;
+  border-radius: 20px;
+
+  padding: 5px 10px;
+}
+
+.productHighlightWrapper--collection[data-highlight-name="BLACK FRIDAY 2023"] {
+  margin-bottom: 15px;
+}
+
+

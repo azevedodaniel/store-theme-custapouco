@@ -1,0 +1,116 @@
+.listPrice {
+  color: #727273;
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+}
+
+.sellingPrice {
+  color: #3f3f40;
+  font-size: 1.25rem;
+}
+
+.sellingPriceValue {
+  font-size: 2.25rem;
+  /* font-weight: 700; */
+}
+
+.installments {
+  color: #727273;
+}
+
+.installments--usingByPromotion {
+  font-weight: 400;
+  color: #ab1c21;
+  padding: 4px 0 0 0;
+}
+
+.spotPrice {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.spotPrice--summary {
+  color: #ab1c21;
+  font-size: 1.2rem;
+}
+
+.spotPriceSavings {
+  font-weight: 700;
+  background-color: #cb2026;
+  color: #fff;
+  padding: 2px;
+  border-radius: 2px;
+}
+
+.sellingPriceValue--summary {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #000000;
+}
+
+.savings--summary {
+  background: #8bc34a;
+  border-radius: 1000px;
+  align-items: center;
+  display: flex;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  vertical-align: baseline;
+  color: #ffffff;
+  gap: 5px;
+}
+
+.savings-discount--summary {
+  font-size: 0.875rem;
+  font-weight: 600;
+  vertical-align: baseline;
+  color: #ffffff;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.listPrice--summary {
+  margin-bottom: 0.25rem;
+  font-size: 0.875rem;
+}
+
+.installments--summary {
+  margin-bottom: 1.5rem;
+  font-size: 0.875rem;
+}
+
+.savings--summaryPercentage {
+  background: #cb2026;
+  border-radius: 1000px;
+  align-items: center;
+  display: flex;
+}
+
+.savingsPercentage--summaryPercentage {
+  font-size: 0.875rem;
+  font-weight: 600;
+  vertical-align: baseline;
+  color: #ffffff;
+  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+}
+
+.spotPriceSavings {
+  background: #cb2026;
+  border-radius: 100px;
+  padding: 4px 8px;
+
+  font-family: 'Cairo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.listPrice--summary {
+  display: none;
+}

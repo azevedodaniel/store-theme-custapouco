@@ -1,0 +1,42 @@
+.container--home-slider-tabs {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 48px 1rem 58px 1rem;
+  overflow: hidden;
+}
+
+.listContainer--home-slider-tabs {
+  margin-bottom: 48px;
+}
+
+.listContainer--home-slider-tabs .listItem :global(.vtex-button) {
+  border: 1px dashed #cb2026;
+  border-radius: 100px;
+  padding: 8px 20px;
+
+  font-family: 'Cairo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+
+  color: #ab1c21;
+  text-transform: none;
+}
+
+.listContainer--home-slider-tabs
+  .listItem.listItemActive
+  :global(.vtex-button) {
+  background: #cb2026;
+  border-bottom: 4px solid #7f0307;
+  border-radius: 100px;
+
+  font-weight: 900;
+  color: #ffffff;
+}
+
+@media (max-width:1024px) {
+  .container--home-slider-tabs { padding-top:28px; }
+  .listContainer--home-slider-tabs { flex-wrap: wrap; margin-bottom: 10px; }
+  .listContainer--home-slider-tabs .listItem :global(.vtex-button) { padding: 0; font-size: 14px; }
+  .listContainer--home-slider-tabs .listItem :global(.vtex-button) :global(.vtex-button__label) { padding: 0 10px; }
+}

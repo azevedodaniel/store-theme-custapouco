@@ -1,0 +1,10 @@
+.formSubmitButton--modal__submit {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.formSubmitButton--modal__submit :global(.vtex-button) {
+  background-color: #22BF61;
+  border-radius: 0;
+  border: none;
+}

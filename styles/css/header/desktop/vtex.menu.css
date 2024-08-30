@@ -1,0 +1,104 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.menuContainer--category-header {
+  gap: 14px;
+}
+
+.styledLink--category-nav__item {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+
+  text-transform: uppercase;
+
+  border-radius: 20px;
+  padding: 10px 18px;
+  transition: 200ms background;
+
+  color: #ffffff;
+  display: block;
+}
+
+.menuContainer--category-nav-visibility__submenu
+  .styledLinkContainer--category-nav-visibility__submenu
+  .styledLink--category-nav-visibility__submenu:not(.menuItem--category-nav-visibility__submenu
+    .styledLink--category-nav-visibility__submenu)
+  .styledLinkContent--category-nav-visibility__submenu {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  text-transform: uppercase;
+
+  color: #333333;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.styledLinkContainer--category-nav-visibility__submenu
+  .styledLink--category-nav-visibility__submenu
+  .styledLinkContent--category-nav-visibility__submenu {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+
+  color: #666666;
+}
+
+.menuItem--category-nav-visibility__submenu
+  .styledLinkContainer--category-nav-visibility__submenu
+  .styledLink--highlight
+  .styledLinkContent--category-nav-visibility__submenu {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+
+  color: #333333;
+  margin-top: 16px;
+  display: block;
+}
+
+.styledLinkContainer--category-nav__item {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.menuItem--category-nav__item:last-child .submenuContainer--category-nav__submenu { 
+  display:none !important; 
+}
+
+.submenuWrapper--category-nav__submenu {
+  margin-top: 22px !important;
+  background-color: #fff;
+  border: none;
+  padding: 42px 1rem;
+}
+
+.menuContainer--category-header {
+  align-items: center;
+}
+
+.menuItem--category-nav__item--isOpen
+  .styledLink--category-nav__item:not(.styledLink--category-nav__item--highlight) {
+  background: #ab1c21;
+}
+
+.styledLink--category-nav__item--highlight {
+  background-color: #333333;
+}
+
+.submenuWrapper--category-nav__submenu--isOpen {
+  animation: fadeIn 200ms;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}

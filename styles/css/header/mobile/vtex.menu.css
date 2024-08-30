@@ -1,0 +1,92 @@
+:global(.vtex-store-link-0-x-link--drawer-simple-link) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 16px 24px;
+  gap: 8px;
+  background: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #f0f0f0;
+  background-color: #fff;
+}
+:global(.vtex-store-link-0-x-link--drawer-simple-link)
+  :global(.vtex-store-link-0-x-label--drawer-simple-link) {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+
+  text-transform: uppercase;
+
+  color: #000;
+}
+.menuItemInnerDiv--category-nav__item__mobile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 16px 24px;
+  gap: 8px;
+  background: #fff;
+  border-bottom: 1px solid #f0f0f0;
+  background-color: #fff;
+}
+.menuItemInnerDiv--category-nav__item__mobile
+  .styledLinkContainer--category-nav__item__mobile {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.menuItemInnerDiv--category-nav__item__mobile
+  .styledLinkContainer--category-nav__item__mobile
+  .styledLink--category-nav__item__mobile--highlight
+  .styledLinkContent {
+  font-weight: 700;
+}
+.menuItemInnerDiv--category-nav__item__mobile
+  .styledLinkContainer--category-nav__item__mobile
+  .styledLinkContent {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+
+  text-transform: uppercase;
+
+  color: #000;
+}
+
+.accordionIcon--category-nav__item__mobile {
+  color: #000;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+.submenuAccordion--category-nav__submenu {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+}
+.submenuAccordion--category-nav__submenu .menuContainer {
+  gap: 24px;
+}
+.submenuAccordion--category-nav__submenu .styledLinkContainer {
+  padding: 0;
+  margin: 0;
+}
+.submenuAccordion--category-nav__submenu
+  .styledLinkContainer
+  .styledLink--highlight {
+  margin-top: 16px;
+  display: block;
+}
+.submenuAccordion--category-nav__submenu
+  .styledLinkContainer
+  .styledLink--highlight
+  .styledLinkContent {
+  font-weight: 700;
+}

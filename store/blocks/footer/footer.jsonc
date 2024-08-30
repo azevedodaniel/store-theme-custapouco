@@ -1,0 +1,905 @@
+{
+  "footer": {
+    "props": {},
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+
+  "footer-layout.desktop": {
+    "children": [
+      //"egoi-newsletter",
+      "flex-layout.row#footer-menu",
+      "flex-layout.row#footer-payment",
+      "flex-layout.row#footer-contacts",
+      "flex-layout.row#footer-copyright",
+      "image#botao-whatsapp"
+    ],
+    "props": {
+      "blockClass": ["relative", "z-998"]
+    }
+  },
+
+  // -----------   MENU   -----------
+
+  "flex-layout.row#footer-menu": {
+    "props": {
+      "blockClass": "footerMenu",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "flex-layout.col#footer-menu-1",
+      "flex-layout.col#footer-menu-2",
+      "flex-layout.col#footer-menu-3",
+      "flex-layout.col#footer-menu-4"
+    ]
+  },
+
+  //  Menu-1
+  "flex-layout.col#footer-menu-1": {
+    "props": {
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    },
+    "children": ["image#footer-logo"]
+  },
+
+  "image#footer-logo": {
+    "props": {
+      "src": "assets/footer/logo-menu.svg"
+    }
+  },
+
+  //  Menu-2
+  "flex-layout.col#footer-menu-2": {
+    "props": {
+      "blockClass": "fmob",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "rich-text#footer-title-1",
+      "link#footer-link-1",
+      "link#footer-link-2",
+      "link#footer-link-3",
+      "link#footer-link-4",
+      "link#footer-link-5",
+      "link#footer-link-6",
+      "link#footer-link-7",
+      "link#footer-link-8"
+    ]
+  },
+
+  "rich-text#footer-title-1": {
+    "props": {
+      "text": "INSTITUCIONAL",
+      "blockClass": "footerTitle"
+    }
+  },
+
+  "link#footer-link-1": {
+    "props": {
+      "href": "/sobre-nos",
+      "label": "Quem somos",
+      "blockClass": "footerLink"
+    }
+  },
+
+  "link#footer-link-2": {
+    "props": {
+      "href": "/nossas-lojas",
+      "label": "Nossas lojas",
+      "blockClass": "footerLink"
+    }
+  },
+
+  "link#footer-link-3": {
+    "props": {
+      "href": "https://blog.custapoucoseduzir.com.br/troca-devolucoes/",
+      "label": "Trocas e devoluções",
+      "blockClass": "footerLink"
+    }
+  },
+
+  "link#footer-link-4": {
+    "props": {
+      "href": "/formas-envio",
+      "label": "Formas de envio",
+      "blockClass": "footerLink"
+    }
+  },
+
+  "link#footer-link-5": {
+    "props": {
+      "href": "/custo-frete",
+      "label": "Custo frete",
+      "blockClass": "footerLink"
+    }
+  },
+
+  "link#footer-link-6": {
+    "props": {
+      "href": "/prazo-entrega",
+      "label": "Prazo de entrega",
+      "blockClass": "footerLink"
+    }
+  },
+
+  "link#footer-link-7": {
+    "props": {
+      "href": "/politica-atendimento",
+      "label": "Política de atendimento",
+      "blockClass": "footerLink"
+    }
+  },
+
+  "link#footer-link-8": {
+    "props": {
+      "href": "/politica-cookies",
+      "label": "Política de cookies",
+      "blockClass": "footerLink"
+    }
+  },
+
+  //  Menu-3
+  "flex-layout.col#footer-menu-3": {
+    "props": {
+      "blockClass": "footer-menu-3",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "flex-layout.col#footer-menu-3-1",
+      "flex-layout.col#footer-menu-3-2"
+    ]
+  },
+
+  "flex-layout.col#footer-menu-3-1": {
+    "children": [
+      "rich-text#footer-title-2",
+      "link#footerLink10",
+      "link#footerLink11"
+    ]
+  },
+
+  "rich-text#footer-title-2": {
+    "props": {
+      "text": "FALE CONOSCO",
+      "blockClass": "footerTitle"
+    }
+  },
+
+  "link#footerLink10": {
+    "props": {
+      "href": "/fale-conosco",
+      "label": "Contato",
+      "blockClass": "footerLink"
+    }
+  },
+
+  "link#footerLink11": {
+    "props": {
+      "href": "https://api.whatsapp.com/send?phone=5511958708266&text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es.",
+      "label": "Atendimento whatsApp",
+      "blockClass": "footerLink"
+    }
+  },
+
+  "flex-layout.col#footer-menu-3-2": {
+    "children": [
+      "rich-text#footerTitle4",
+      "link#footerLink12",
+      "link#footerLink13",
+      "link#footerLink14"
+    ]
+  },
+
+  "rich-text#footerTitle4": {
+    "props": {
+      "text": "MINHA CONTA",
+      "blockClass": "footerTitle"
+    }
+  },
+
+  "link#footerLink12": {
+    "props": {
+      "href": "https://www.custapoucoseduzir.com.br/login?returnUrl=%2Faccount",
+      "label": "Login / Cadastro",
+      "blockClass": "footerLink"
+    }
+  },
+
+  "link#footerLink13": {
+    "props": {
+      "href": "https://www.custapoucoseduzir.com.br/login?returnUrl=%2Faccount",
+      "label": "Minha conta",
+      "blockClass": "footerLink"
+    }
+  },
+
+  "link#footerLink14": {
+    "props": {
+      "href": "https://www.custapoucoseduzir.com.br/login?returnUrl=%2Faccount",
+      "label": "Meus pedidos",
+      "blockClass": "footerLink"
+    }
+  },
+
+  // menu-4
+  "flex-layout.col#footer-menu-4": {
+    "props": {
+      "blockClass": "footerMenu-4",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    },
+    "children": ["image#instagram", "image#whatsapp", "image#map"]
+  },
+
+  "image#instagram": {
+    "props": {
+      "src": "assets/footer/instagram.svg",
+      "blockClass": "networkImage",
+      "link": {
+        "url": "https://www.instagram.com/custapoucoseduzir/"
+      }
+    }
+  },
+
+  "image#whatsapp": {
+    "props": {
+      "src": "assets/footer/whatsapp-link.svg",
+      "blockClass": "networkImage",
+      "link": {
+        "url": "https://api.whatsapp.com/send?phone=5511958708266&text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
+      }
+    }
+  },
+
+  "image#map": {
+    "props": {
+      "src": "assets/footer/map.svg",
+      "blockClass": "networkImage",
+      "link": {
+        "url": "https://goo.gl/maps/2fNGVHUWL9pQGgq98"
+      }
+    }
+  },
+
+  // ----------   PAYMENTS   ----------
+
+  "flex-layout.row#footer-payment": {
+    "props": {
+      "colSizing": "auto",
+      "blockClass": "footerPaymentContainer",
+      "horizontalAlign": "center"
+    },
+    "children": [
+      "flex-layout.row#payment-text",
+      "flex-layout.row#payment-images",
+      "flex-layout.row#send-text",
+      "flex-layout.row#send-images"
+    ]
+  },
+
+  // formas-pagamento
+  "flex-layout.row#payment-text": {
+    "children": ["rich-text#payment-text"]
+  },
+
+  "rich-text#payment-text": {
+    "props": {
+      "text": "FORMAS DE PAGAMENTO",
+      "blockClass": "footerFormas"
+    }
+  },
+
+  "flex-layout.row#payment-images": {
+    "children": ["image#payments-images"]
+  },
+
+  "image#payments-images": {
+    "props": {
+      "src": "assets/footer/formas-pagamento.png",
+      "blockClass": "paymentImage"
+    }
+  },
+
+  // formas-envio
+  "flex-layout.row#send-text": {
+    "props": {},
+    "children": ["rich-text#send-text"]
+  },
+
+  "rich-text#send-text": {
+    "props": {
+      "text": "FORMAS DE ENVIO",
+      "blockClass": "footerFormas"
+    }
+  },
+
+  "flex-layout.row#send-images": {
+    "children": ["image#send-images"]
+  },
+
+  "image#send-images": {
+    "props": {
+      "src": "assets/footer/formas-envio.png",
+      "blockClass": "sendImages"
+    }
+  },
+
+  // ----------   CONTACTS   ----------
+
+  "flex-layout.row#footer-contacts": {
+    "props": {
+      "blockClass": "footerContacts",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "flex-layout.row#contacts-col-1",
+      "flex-layout.row#contacts-col-2",
+      "flex-layout.row#contacts-col-3",
+      "flex-layout.row#contacts-col-4"
+    ]
+  },
+
+  // col-1
+  "flex-layout.row#contacts-col-1": {
+    "props": {
+      "blockClass": "contacts-col",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
+    },
+    "children": ["image#contacts-col-1-img", "rich-text#contacts-col-1-text"]
+  },
+
+  "image#contacts-col-1-img": {
+    "props": {
+      "blockClass": "contacts-col-img",
+      "src": "assets/footer/whatsapp.svg"
+    }
+  },
+
+  "rich-text#contacts-col-1-text": {
+    "props": {
+      "blockClass": "contacts-col-text",
+      "text": "## WHATSAPP \n Entre em contato conosco \n (11) 95870-8266"
+    }
+  },
+
+  // col-2
+  "flex-layout.row#contacts-col-2": {
+    "props": {
+      "blockClass": "contacts-col",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
+    },
+    "children": ["image#contacts-col-2-img", "rich-text#contacts-col-2-text"]
+  },
+
+  "image#contacts-col-2-img": {
+    "props": {
+      "blockClass": "contacts-col-img",
+      "src": "assets/footer/suporte.svg"
+    }
+  },
+
+  "rich-text#contacts-col-2-text": {
+    "props": {
+      "blockClass": "contacts-col-text",
+      "text": "## SUPORTE \n Dúvidas sobre pedidos \n sac@custapoucoseduzir.com.br"
+    }
+  },
+
+  // col-3
+  "flex-layout.row#contacts-col-3": {
+    "props": {
+      "blockClass": "contacts-col",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
+    },
+    "children": ["image#contacts-col-3-img", "rich-text#contacts-col-3-text"]
+  },
+
+  "image#contacts-col-3-img": {
+    "props": {
+      "blockClass": "contacts-col-img",
+      "src": "assets/footer/atendimento.svg"
+    }
+  },
+
+  "rich-text#contacts-col-3-text": {
+    "props": {
+      "blockClass": "contacts-col-text",
+      "text": "## ATENDIMENTO \n Seg. a Sex. das 5h às 14h \n e Sáb. até às 13h"
+    }
+  },
+
+  // col-4
+  "flex-layout.row#contacts-col-4": {
+    "props": {
+      "blockClass": "contacts-col",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
+    },
+    "children": ["image#contacts-col-4-img", "rich-text#contacts-col-4-text"]
+  },
+
+  "image#contacts-col-4-img": {
+    "props": {
+      "blockClass": "contacts-col-img",
+      "src": "assets/footer/disque.svg"
+    }
+  },
+
+  "rich-text#contacts-col-4-text": {
+    "props": {
+      "blockClass": "contacts-col-text",
+      "text": "## DISQUE CPS \n Ligue para nós \n (11) 95870-8266"
+    }
+  },
+
+  // ----------   COPYRIGHT   ----------
+
+  "flex-layout.row#footer-copyright": {
+    "props": {
+      "blockClass": "footerCopyright",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.row#copyright-col-1",
+      "flex-layout.row#copyright-col-2",
+      "flex-layout.row#copyright-col-3",
+      "flex-layout.row#copyright-col-4"
+    ]
+  },
+
+  // col-1
+  "flex-layout.row#copyright-col-1": {
+    "props": {
+      "blockClass": "copyright-col",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
+    },
+    "children": ["image#copyright-col-1-img"]
+  },
+
+  "image#copyright-col-1-img": {
+    "props": {
+      "blockClass": "copyright-col-img",
+      "src": "assets/footer/logo-cps-boca.svg"
+    }
+  },
+
+  // col-2
+  "flex-layout.row#copyright-col-2": {
+    "props": {
+      "blockClass": "copyright-col",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
+    },
+    "children": ["rich-text#copyright-col-2-text"]
+  },
+
+  "rich-text#copyright-col-2-text": {
+    "props": {
+      "blockClass": "copyright-col-2-text",
+      "text": "2021 @ TODOS OS DIREITOS RESERVADOS \n Custa Pouco Seduzir | CNPJ: 15.535.005/0001-96 \n Rua Henrique Dias, 86 - São Paulo / SP - CEP: 03009-020 "
+    }
+  },
+
+  // col-3
+  "flex-layout.row#copyright-col-3": {
+    "props": {
+      "blockClass": "copyright-col-3",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
+    },
+    "children": ["rich-text#copyright-col-3-text", "image#copyright-col-3-img"]
+  },
+  "rich-text#copyright-col-3-text": {
+    "props": {
+      "blockClass": "copyright-col-3-text",
+      "text": "Desenvolvido por:"
+    }
+  },
+  "image#copyright-col-3-img": {
+    "props": {
+      "blockClass": "copyright-col-3-img",
+      "src": "assets/footer/logo-inovaki.svg"
+    }
+  },
+
+  // col-4
+  "flex-layout.row#copyright-col-4": {
+    "props": {
+      "blockClass": "copyright-col-4",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
+    },
+    "children": ["rich-text#copyright-col-4-text", "image#copyright-col-4-img"]
+  },
+  "rich-text#copyright-col-4-text": {
+    "props": {
+      "blockClass": "copyright-col-4-text",
+      "text": "Tecnologia:"
+    }
+  },
+  "image#copyright-col-4-img": {
+    "props": {
+      "blockClass": "copyright-col-4-img",
+      "src": "assets/footer/logo-vtex.svg"
+    }
+  },
+
+  "image#botao-whatsapp": {
+    "props": {
+      "src": "assets/footer/botao-whatsapp.png",
+      "blockClass": "botao-whatsapp",
+      "link": {
+        "url": "https://api.whatsapp.com/send?phone=5511958708266&text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es.",
+        "newTab": true
+      }
+    }
+  },
+
+  // ------------------------------------    M O B I L E    -----------------------------------------
+
+  "footer-layout.mobile": {
+    "props": {
+      "blockClass": "footerLayoutMobile"
+    },
+    "children": [
+      "flex-layout.row#newsletter",
+      "flex-layout.row#footer-menu-mobile",
+      "flex-layout.row#footer-payment-mobile",
+      "flex-layout.row#footer-contacts-mobile",
+      "flex-layout.row#footer-copyright-mobile",
+      "image#botao-whatsapp-mobile"
+    ]
+  },
+
+  // menu-mobile
+  "flex-layout.row#footer-menu-mobile": {
+    "props": {
+      "blockClass": "footerMenuMobile",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "horizontalAlign": "center"
+    },
+    "children": [
+      "flex-layout.col#footer-menu-1",
+      "flex-layout.col#footer-menu-2-mobile"
+    ]
+  },
+
+  "flex-layout.col#footer-menu-2-mobile": {
+    "props": {
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "horizontalAlign": "center",
+      "blockClass": ["menu-rodape-institucional"]
+    },
+    "children": [
+      "disclosure-layout#menu-rodape-institucional",
+      "disclosure-layout#menu-rodape-contato",
+      "disclosure-layout#menu-rodape-conta"
+    ]
+  },
+
+  // --- ACCORDION MENU --- //
+  // --- INSTITUCIONAL - ACCORDION MENU --- //
+  "disclosure-layout#menu-rodape-institucional": {
+    "children": [
+      "disclosure-trigger#menu-rodape-institucional",
+      "disclosure-content#menu-rodape-institucional"
+    ]
+  },
+
+  "disclosure-trigger#menu-rodape-institucional": {
+    "children": [
+      "rich-text#titulo-menu-rodape-institucional",
+      "disclosure-state-indicator#menu-rodape"
+    ]
+  },
+  "disclosure-content#menu-rodape-institucional": {
+    "children": ["rich-text#submenu-rodape-institucional"]
+  },
+  "rich-text#titulo-menu-rodape-institucional": {
+    "props": {
+      "text": "INSTITUCIONAL"
+    }
+  },
+  "rich-text#submenu-rodape-institucional": {
+    "props": {
+      "text": "[Quem Somos](/sobre-nos) [Nossas Lojas](/nossas-lojas) [Trocas e Devoluções](https://blog.custapoucoseduzir.com.br/troca-devolucoes/) [Formas de Envio](/politica-de-envio) [Custo Frete](/custo-frete) [Prazo de Entrega](/prazo-de-entrega) [Política de Atendimento](/termos-de-uso) [Política de Cookies](/termos-de-uso)"
+    }
+  },
+  // --- FIM - INSTITUCIONAL - ACCORDION MENU --- //
+
+  // --- FALE CONOSCO - ACCORDION MENU --- //
+  "disclosure-layout#menu-rodape-contato": {
+    "children": [
+      "disclosure-trigger#menu-rodape-contato",
+      "disclosure-content#menu-rodape-contato"
+    ]
+  },
+
+  "disclosure-trigger#menu-rodape-contato": {
+    "children": [
+      "rich-text#titulo-menu-rodape-contato",
+      "disclosure-state-indicator#menu-rodape"
+    ]
+  },
+  "disclosure-content#menu-rodape-contato": {
+    "children": ["rich-text#submenu-rodape-contato"]
+  },
+  "rich-text#titulo-menu-rodape-contato": {
+    "props": {
+      "text": "FALE CONOSCO"
+    }
+  },
+  "rich-text#submenu-rodape-contato": {
+    "props": {
+      "text": "[Contato](/fale-conosco) [Atendimento  WhatsApp](https://api.whatsapp.com/send?phone=5511958708266&text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es.)"
+    }
+  },
+  // --- FIM - FALE CONOSCO - ACCORDION MENU --- //
+
+  // --- CONTA - ACCORDION MENU --- //
+  "disclosure-layout#menu-rodape-conta": {
+    "children": [
+      "disclosure-trigger#menu-rodape-conta",
+      "disclosure-content#menu-rodape-conta"
+    ]
+  },
+
+  "disclosure-trigger#menu-rodape-conta": {
+    "children": [
+      "rich-text#titulo-menu-rodape-conta",
+      "disclosure-state-indicator#menu-rodape"
+    ]
+  },
+  "disclosure-content#menu-rodape-conta": {
+    "children": ["rich-text#submenu-rodape-conta"]
+  },
+  "rich-text#titulo-menu-rodape-conta": {
+    "props": {
+      "text": "MINHA CONTA"
+    }
+  },
+  "rich-text#submenu-rodape-conta": {
+    "props": {
+      "text": "[Login / Cadastro](/login) [Minha Conta](/account#/profile) [Meus Pedidos](/account#/orders)"
+    }
+  },
+  "disclosure-state-indicator#menu-rodape": {
+    "props": {
+      "Show": "icon-caret#down",
+      "Hide": "icon-caret#up"
+    }
+  },
+  // --- FIM - CONTA - ACCORDION MENU --- //
+  // --- FIM - ACCORDION MENU --- //
+
+  // PAYMENT - MOBILE
+
+  "flex-layout.row#footer-payment-mobile": {
+    "props": {
+      "colSizing": "auto",
+      "blockClass": "footerPaymentMobile",
+      "horizontalAlign": "center"
+    },
+    "children": [
+      "flex-layout.row#payment-text",
+      "flex-layout.row#payment-images",
+      "flex-layout.row#send-text",
+      "flex-layout.row#send-images"
+    ]
+  },
+
+  // CONTACTS - MOBILE
+  "flex-layout.row#footer-contacts-mobile": {
+    "props": {
+      "blockClass": "footerContactsMobile",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true,
+      "horizontalAlign": "center"
+    },
+    "children": ["flex-layout.col#contacts-mobile"]
+  },
+
+  "flex-layout.col#contacts-mobile": {
+    "props": {
+      "blockClass": "contactsColMobile",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "flex-layout.row#contacts-col-1-mobile",
+      "flex-layout.row#contacts-col-2-mobile",
+      "flex-layout.row#contacts-col-3-mobile",
+      "flex-layout.row#contacts-col-4-mobile"
+    ]
+  },
+
+  "flex-layout.row#contacts-col-1-mobile": {
+    "props": {
+      "blockClass": "contacts-col-mobile",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
+    },
+    "children": ["image#contacts-col-1-img", "rich-text#contacts-col-1-text"]
+  },
+  "flex-layout.row#contacts-col-2-mobile": {
+    "props": {
+      "blockClass": "contacts-col-mobile",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
+    },
+    "children": ["image#contacts-col-2-img", "rich-text#contacts-col-2-text"]
+  },
+  "flex-layout.row#contacts-col-3-mobile": {
+    "props": {
+      "blockClass": "contacts-col-mobile",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
+    },
+    "children": ["image#contacts-col-3-img", "rich-text#contacts-col-3-text"]
+  },
+  "flex-layout.row#contacts-col-4-mobile": {
+    "props": {
+      "blockClass": "contacts-col-mobile",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
+    },
+    "children": ["image#contacts-col-4-img", "rich-text#contacts-col-4-text"]
+  },
+
+  // COPYRIGHT - MOBILE
+  "flex-layout.row#footer-copyright-mobile": {
+    "props": {
+      "blockClass": "footerCopyrightMobile",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.row#copyright-col-1-mobile",
+      "flex-layout.row#copyright-col-2-mobile",
+      "flex-layout.row#copyright-col-3-mobile",
+      "flex-layout.row#copyright-col-4-mobile"
+    ]
+  },
+
+  // col 1
+  "flex-layout.row#copyright-col-1-mobile": {
+    "props": {
+      "blockClass": "copyright-col",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
+    },
+    "children": ["image#copyright-col-1-img-mobile"]
+  },
+
+  "image#copyright-col-1-img-mobile": {
+    "props": {
+      "blockClass": "copyright-col-1-img-mobile",
+      "src": "assets/footer/logo-cps-boca.svg"
+    }
+  },
+
+  "flex-layout.row#copyright-col-2-mobile": {
+    "props": {
+      "blockClass": "copyright-col-2-mobile",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true,
+      "horizontalAlign": "center",
+      "verticalAlign": "center"
+    },
+    "children": ["rich-text#copyright-col-2-text-mobile"]
+  },
+
+  "rich-text#copyright-col-2-text-mobile": {
+    "props": {
+      "blockClass": "copyright-col-2-text-mobile",
+      "text": "2021 @ TODOS OS \n DIREITOS RESERVADOS \n Custa Pouco Seduzir \n CNPJ: 15.535.005/0001-96 \n Rua Henrique Dias, 86 - São Paulo / SP \n CEP: 03009-020 "
+    }
+  },
+
+  // col 3
+  "flex-layout.row#copyright-col-3-mobile": {
+    "props": {
+      "blockClass": "copyright-col-3-mobile",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "rich-text#copyright-col-3-text",
+      "image#copyright-col-3-img-mobile"
+    ]
+  },
+
+  "image#copyright-col-3-img-mobile": {
+    "props": {
+      "blockClass": "copyright-col-3-img-mobile",
+      "src": "assets/footer/logo-inovaki.svg"
+    }
+  },
+
+  // col 4
+  "flex-layout.row#copyright-col-4-mobile": {
+    "props": {
+      "blockClass": "copyright-col-4",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
+    },
+    "children": ["rich-text#copyright-col-4-text", "image#copyright-col-4-img"]
+  },
+
+  "image#copyright-col-4-img-mobile": {
+    "props": {
+      "blockClass": "copyright-col-4-img-mobile",
+      "src": "assets/footer/logo-vtex.svg"
+    }
+  },
+
+  // chamada de "product.json"
+  "image#mailIcon": {
+    "props": {
+      "src": "assets/icons/whatsAppIcon.svg"
+    }
+  },
+
+  // WhatsApp Button
+
+  "image#botao-whatsapp-mobile": {
+    "props": {
+      "src": "assets/footer/botao-whatsapp-mobile.png",
+      "blockClass": "botao-whatsapp-mobile",
+      "link": {
+        "url": "https://api.whatsapp.com/send?phone=5511958708266&text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es.",
+        "newTab": true
+      }
+    }
+  },
+
+  "flex-layout.row#newsletter":{
+    "props":{
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true,
+      "blockClass": "newsletter"
+    },
+    "children": ["flex-layout.col#ico-newsletter","flex-layout.col#form-newsletter"]
+  },
+
+  "flex-layout.col#ico-newsletter": {
+    "children":["image#ico-newletter"]
+  },
+
+  "image#ico-newletter":{
+    "props":{
+      "src": "assets/footer/ico-newsletter-rodape.png"
+    }
+  },
+
+  "flex-layout.col#form-newsletter":{
+    "children":["rich-text#chamada-newsletter","newsletter-form"]
+  },
+
+  "rich-text#chamada-newsletter": {
+    "props": {
+      "blockClass": "chamada-newsletter",
+      "text": "## Fique por dentro das novidades\n Cadastre-se e ganhe cupons de **desconto + ofertas** exclusivas!"
+    }
+  },
+
+  "newsletter-form": {
+    "children": [
+      "newsletter-input-email",
+      "newsletter-input-name",
+      "newsletter-submit"
+    ]
+  }
+}

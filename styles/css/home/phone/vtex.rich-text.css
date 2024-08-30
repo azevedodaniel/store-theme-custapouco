@@ -1,0 +1,62 @@
+.paragraph--text-categorias-lista {
+  font-family: Inter;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12.1px;
+  text-align: left;
+  color: #AB1C21;
+
+  margin: 0;
+  margin-top: 5px;
+  padding: 0;
+}
+
+/*  titulo lista mais procurados */
+.paragraph--title-list {
+  font-size: 1.2rem;
+  align-items: center;
+  display: flex;
+  gap: 5px;
+  margin: 0 !important;
+}
+
+.paragraph--title-list::before, .paragraph--title-list::after {
+  content: "";
+  flex: 1;
+  width: 35px;
+  border-bottom: 1px solid #000; 
+  margin: 0 10px; 
+}
+
+.strong--title-list {
+  color: #AB1C21;
+}
+/*  titulo lista mais procurados  FINAL*/
+
+/* lista coleção 1 */
+.paragraph--title-colecao1  {
+  font-size: 1.2rem;
+  margin: 0 !important;
+}
+
+.strong--title-colecao1, .strong--title-colecao2 {
+  color: #AB1C21;
+}
+
+.paragraph--title-colecao2 {
+  font-size: 1.2rem;
+  align-items: center;
+  display: flex;
+  gap: 5px;
+  margin: 0 !important;
+  padding-top: 30px;
+
+}
+
+.paragraph--title-colecao2::before, .paragraph--title-colecao2::after {
+  content: "";
+  flex: 1;
+  width: 50px;
+  border-bottom: 1px solid #000; 
+  margin: 0 10px; 
+}

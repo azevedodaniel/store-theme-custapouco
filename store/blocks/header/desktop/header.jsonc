@@ -1,0 +1,169 @@
+{
+  // ------------- Header Desktop -------------
+
+  "header-layout.desktop": {
+    "title": "[HEADER DESKTOP]",
+    "children": ["flex-layout.row#pre-header-desk", "header-row#1-desktop", "sticky-layout#header-desktop-sticky"]
+  },
+
+  "flex-layout.row#pre-header-desk": {
+    "props": {
+      "blockClass": ["preHeader-top"],
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "fullWidth": true,
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    },
+    "children": ["slider-layout#pre-header"],
+    "title": "[SWIPER] Header Desk"
+  },
+
+  // ------------- Header Desktop Rows -------------
+
+  "sticky-layout#header-desktop-sticky": {
+    "props": {
+      "blockClass": "header-desktop-sticky"
+    },
+    "children": ["header-row#2-desktop"]
+  },
+
+  // ----- FIRST ROW -----
+
+  "header-row#1-desktop": {
+    "children": ["flex-layout.row#flex-desktop-row-1"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "header-top-bar"
+    },
+    "title": "Primeira Linha"
+  },
+
+  "flex-layout.row#flex-desktop-row-1": {
+    "props": {
+      "blockClass": "header-flex-desktop-row-1",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "search-bar#header-search-bar",
+      "login#header-login",
+      "flex-layout.row#wishlist-wrapper",
+      "minicart.v2"
+    ]
+  },
+
+  "search-bar#header-search-bar": {
+    "props": {
+      "openAutocompleteOnFocus": true,
+      "placeholder": "Buscar...",
+      "hasIconLeft": true,
+      "blockClass": "header-search-bar"
+    }
+  },
+
+  "login#header-login": {
+    "props": {
+      "optionsTitle": "Escolha sua opção para entrar:",
+      "emailAndPasswordTitle": "Digite seu e-mail e senha",
+      "accessCodeTitle": "Digite seu e-mail",
+
+      "emailPlaceholder": "Seu e-mail...",
+      "passwordPlaceholder": "Sua senha...",
+      "acessCodePlaceholder": "Digite o código...",
+
+      "showPasswordVerificationIntoTooltip": true,
+      "showIconProfile": true,
+
+      "iconLabel": "Cadastro / Login",
+      "termsAndConditions": "Bem-vindo à Custa Pouco Seduzir",
+
+      "blockClass": "header-login"
+    }
+  },
+
+  "flex-layout.row#wishlist-wrapper": {
+    "props": {
+      "blockClass": "wishlist-wrapper"
+    },
+    "children": ["link#wishlist-button-link"]
+  },
+
+  "link#wishlist-button-link": {
+    "props": {
+      "href": "/wishlist",
+      "blockClass": "wishlist-link"
+    },
+    "title": "Link Wishlist",
+    "children": ["icon#header-wishlist-icon"]
+  },
+
+  "icon#header-wishlist-icon": {
+    "props": {
+      "id": "mpa-heart",
+      "size": 30,
+      "activeClassName": "header-wishlist-icon"
+    }
+  },
+
+  // ----- SECOND ROW -----
+
+  "header-row#2-desktop": {
+    "children": ["flex-layout.row#flex-desktop-row-2"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "header-bottom-bar"
+    },
+    "title": "Segunda Linha"
+  },
+
+  "flex-layout.row#flex-desktop-row-2": {
+    "props": {
+      "blockClass": "header-flex-desktop-row-2",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "flex-layout.row#category-nav-desktop-logos",
+      "flex-layout.row#category-nav-desktop-items"
+    ]
+  },
+
+  "flex-layout.row#category-nav-desktop-items": {
+    "props": {
+      "blockClass": "category-nav",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true,
+      "fullWidth": true,
+      "width": "100%"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#header-desktop-category-menu",
+      "flex-layout.row#category-nav-desktop-buttons"
+    ]
+  },
+
+  "flex-layout.row#category-nav-desktop-buttons": {
+    "props": {
+      "blockClass": "category-nav-buttons",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true,
+      "fullWidth": false
+    },
+    "children": ["overlay-trigger#search-bar-dropdown", "minicart.v2"]
+  },
+
+  "flex-layout.row#category-nav-desktop-logos": {
+    "props": {
+      "blockClass": "category-nav-logos",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true,
+      "fullWidth": false
+    },
+    "children": ["logo#header-logo-lips", "logo#header-logo-text"],
+    "title": "Logos"
+  }
+}

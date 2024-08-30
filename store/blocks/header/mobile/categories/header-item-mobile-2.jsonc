@@ -1,0 +1,52 @@
+{
+  "experimental__visibility-layout#header-item-2-mobile": {
+    "title": "Visibilidade Item 2",
+    "props": {
+      "visible": true
+    },
+    "children": ["menu-item#header-item-2-mobile"]
+  },
+  "menu-item#header-item-2-mobile": {
+    "props": {
+      "blockClass": "category-nav__item__mobile",
+      "id": "menu-item-header-item-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Item 2",
+        "text": "Item 2"
+      }
+    },
+    "title": "Menu Item 2",
+    "blocks": ["vtex.menu@2.x:submenu.accordion#header-item-2-mobile"]
+  },
+  "vtex.menu@2.x:submenu.accordion#header-item-2-mobile": {
+    "props": {
+      "blockClass": "category-nav__submenu"
+    },
+    "children": ["vtex.menu@2.x:menu#header-item-2-mobile-drawerv2"]
+  },
+  "vtex.menu@2.x:menu#header-item-2-mobile-drawerv2": {
+    "props": {
+      "orientation": "vertical",
+      "items": [
+        {
+          "title": "Item Padrão",
+          "type": "custom",
+          "iconId": null,
+          "itemProps": {
+            "type": "internal",
+            "href": "/header-item-mobile",
+            "noFollow": false,
+            "tagTitle": "Ver Todos",
+            "text": "Ver Todos"
+          }
+        }
+      ]
+    }
+  }
+}

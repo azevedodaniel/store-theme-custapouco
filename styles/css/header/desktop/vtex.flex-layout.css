@@ -1,0 +1,39 @@
+.flexRow--header-flex-desktop-row-1,
+.flexRow--header-flex-desktop-row-2 {
+  width: 100%;
+}
+
+.flexRowContent--header-flex-desktop-row-1 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 13px;
+}
+
+.flexRowContent--header-flex-desktop-row-2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.flexRowContent--category-nav-visibility__submenu {
+  gap: 100px;
+  align-items: flex-start;
+}
+
+.flexRowContent--category-nav {
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.flexRowContent--category-nav-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+}

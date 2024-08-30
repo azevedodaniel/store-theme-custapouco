@@ -1,0 +1,171 @@
+{
+  // ---------- DEFINITION ----------
+  "drawer#header-drawer": {
+    "children": ["flex-layout.row#header-drawer"],
+    "blocks": ["drawer-header#header-drawer"],
+    "props": {
+      "blockClass": "header-mobile",
+      "isFullWidth": true
+    }
+  },
+  "drawer-header#header-drawer": {
+    "children": [
+      "flex-layout.row#header-drawer-monograma",
+      "drawer-close-button#header-drawer"
+    ],
+    "props": {
+      "blockClass": "drawer-header-mobile",
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+
+  // ---------- LOGO ----------
+  "flex-layout.row#header-drawer-monograma": {
+    "children": ["logo#header-logo-text"]
+  },
+
+  // ---------- CLOSE BUTTON ----------
+  "drawer-close-button#header-drawer": {
+    "props": {
+      "size": 16,
+      "blockClass": "close-drawer-header"
+    }
+  },
+
+  // ---------- HEADER DRAWER  ----------
+
+  "flex-layout.row#header-drawer": {
+    "children": [
+      "flex-layout.col#header-drawer-section-1",
+      "flex-layout.row#header-drawer-section-2"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "blockClass": "container-drawer"
+    }
+  },
+
+  // Close button
+  "drawer-close-button#submenu": {
+    "props": {
+      "text": "Voltar",
+      "blockClass": "back-drawer"
+    }
+  },
+
+  // SECTION - COLUMN 1 - ITENS LIST AND SUBMENUS
+  "flex-layout.col#header-drawer-section-1": {
+    "children": [
+      "experimental__visibility-layout#header-item-1-mobile",
+      "experimental__visibility-layout#header-mobile-simple-link-1",
+      "experimental__visibility-layout#header-item-2-mobile",
+      "experimental__visibility-layout#header-item-3-mobile",
+      "experimental__visibility-layout#header-mobile-simple-link-2",
+      "experimental__visibility-layout#header-item-4-mobile",
+      "experimental__visibility-layout#header-item-5-mobile",
+      "experimental__visibility-layout#header-mobile-simple-link-3",
+      "experimental__visibility-layout#header-item-6-mobile",
+      "experimental__visibility-layout#header-item-7-mobile",
+      "experimental__visibility-layout#header-mobile-simple-link-4",
+      "experimental__visibility-layout#header-item-8-mobile"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "experimentalHideEmptyCols": true,
+      "blockClass": "drawer-1"
+    }
+  },
+
+  // Simple Links Visible
+  "experimental__visibility-layout#header-mobile-simple-link-1": {
+    "title": "Visibilidade Link Simples 1",
+    "props": {
+      "visible": false
+    },
+    "children": ["link#header-drawer-simple-link-1"]
+  },
+
+  "experimental__visibility-layout#header-mobile-simple-link-2": {
+    "title": "Visibilidade Link Simples 2",
+    "props": {
+      "visible": false
+    },
+    "children": ["link#header-drawer-simple-link-2"]
+  },
+
+  "experimental__visibility-layout#header-mobile-simple-link-3": {
+    "title": "Visibilidade Link Simples 3",
+    "props": {
+      "visible": false
+    },
+    "children": ["link#header-drawer-simple-link-3"]
+  },
+
+  "experimental__visibility-layout#header-mobile-simple-link-4": {
+    "title": "Visibilidade Link Simples 4",
+    "props": {
+      "visible": false
+    },
+    "children": ["link#header-drawer-simple-link-4"]
+  },
+
+  // Simple Links
+  "link#header-drawer-simple-link-1": {
+    "props": {
+      "blockClass": "drawer-simple-link"
+    },
+    "title": "Link"
+  },
+
+  "link#header-drawer-simple-link-2": {
+    "props": {
+      "blockClass": "drawer-simple-link"
+    },
+    "title": "Link"
+  },
+
+  "link#header-drawer-simple-link-3": {
+    "props": {
+      "blockClass": "drawer-simple-link"
+    },
+    "title": "Link"
+  },
+
+  "link#header-drawer-simple-link-4": {
+    "props": {
+      "blockClass": "drawer-simple-link"
+    },
+    "title": "Link"
+  },
+
+  // SECTION - COLUMN 2 - BUTTONS, LOGIN AND REGISTER
+  "flex-layout.row#header-drawer-section-2": {
+    "props": {
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "drawer-login"
+    },
+    "children": ["link#login-drawer", "link#register-drawer"]
+  },
+
+  "link#login-drawer": {
+    "props": {
+      "href": "/account",
+      "label": "MINHA CONTA",
+      "blockClass": "login-link-drawer"
+    },
+    "title": "Minha Conta"
+  },
+
+  "link#register-drawer": {
+    "props": {
+      "href": "/login",
+      "label": "CADASTRAR",
+      "blockClass": "register-link-drawer"
+    },
+    "title": "Cadastrar"
+  }
+}

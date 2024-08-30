@@ -1,0 +1,26 @@
+{
+  "logo#header-logo-lips": {
+    "props": {
+      "width": 126,
+      "height": 126,
+      "mobileWidth": 126,
+      "mobileHeight": 126,
+      "url": "assets/logos/logo-lips.png",
+      "blockClass": "header-logo-lips",
+      "href": "/"
+    },
+    "title": "Logo Lábios"
+  },
+  "logo#header-logo-text": {
+    "props": {
+      "width": 86,
+      "height": 60,
+      "mobileWidth": 86,
+      "mobileHeight": 60,
+      "url": "assets/logos/logo-text.svg",
+      "blockClass": "header-logo-text",
+      "href": "/"
+    },
+    "title": "Logo Texto"
+  }
+}

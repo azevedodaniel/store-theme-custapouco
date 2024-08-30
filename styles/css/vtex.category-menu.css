@@ -1,0 +1,148 @@
+.container {
+  background: transparent !important;
+}
+
+.sidebarHeader::after {
+  content: 'Todas as categorias: ' !important; /* Inside menu */
+  margin: 0 auto !important;
+  font-size: x-large !important;
+  display: flex !important;
+  font-weight: 300;
+  justify-content: center !important;
+  color: white !important;
+}
+
+.sidebarHeader {
+  height: 100px;
+  font-weight: bold;
+  background-size: 45% !important;
+  background-position: center 50px;
+  background-repeat: no-repeat !important;
+}
+
+.sidebar {
+  color: white !important;
+  max-width: 400px !important;
+  min-width: 280px;
+  overflow: scroll !important;
+  background: var(--notification-bar);
+}
+
+:global(.vtex-category-menu-2-x-sidebarItemContainer),
+:global(.vtex-category-menu-2-x-plusIcon),
+:global(.vtex-category-menu-2-x-minusIcon),
+:global(.vtex-category-menu-2-x) {
+  color: rgb(255, 243, 221) !important;
+  font-weight: 700 !important;
+  font-size: 1.2rem;
+}
+
+:global(.vtex-category-menu-2-x-sidebarItemContainer) {
+  font-size: 0.9rem !important;
+  font-weight: 300 !important;
+}
+
+:global(.vtex-category-menu-2-x-sidebar) {
+  overflow: scroll !important;
+}
+
+.itemContainer--department {
+  padding: 2px 0 !important;
+  background: none !important;
+}
+
+.menuIcon {
+  color: #fff !important;
+  fill: #fff !important;
+  size: 80% !important;
+}
+
+.itemContainer--department:hover {
+  transition-duration: 0.4s !important;
+}
+
+.departmentList {
+  height: auto;
+}
+
+.departmentLink {
+  color: #610196 !important;
+  font-size: 0.9em;
+  letter-spacing: 0.4px;
+  border-bottom: none !important;
+  text-transform: uppercase;
+}
+
+.firstLevelLink {
+  color: #610196;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.2px;
+  line-height: 1em;
+}
+
+.firstLevelLink:hover {
+  text-decoration: none !important;
+  color: #ff8c00;
+}
+
+.itemContainer {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+@media only screen and (max-width: 868px) {
+  .departmentLink {
+    color: #fff !important;
+    font-size: 0.9em;
+    letter-spacing: 0.4px;
+    border-bottom: none !important;
+    text-transform: uppercase;
+  }
+
+  .container {
+    overflow: auto;
+    display: block;
+    counter-reset: tjma;
+  }
+
+  .departmentList,
+  .firstLevelList {
+    float: left;
+    clear: both;
+    height: auto !important;
+  }
+
+  .firstLevelLink {
+    width: 50vw !important;
+    margin-left: -40px !important;
+    text-align: left !important;
+    font-size: 0.8em !important;
+    letter-spacing: 0.3px !important;
+  }
+
+  .firstLevelLink::before {
+    counter-increment: tjma;
+    content: /*counter(tjma)*/ '• ';
+    color: #ff8c00 !important;
+  }
+
+  .itemContainer,
+  .itemContainer:hover {
+    width: 100% !important;
+    padding: 10px 0 !important;
+    clear: both !important;
+    display: block !important;
+    transition: color 0.6s ease;
+    cursor: pointer;
+    padding: 0 0 !important;
+    color: #ffffff !important;
+  }
+
+  .departmentLink {
+    background-position: left;
+    background-repeat: no-repeat;
+    text-align: left;
+    letter-spacing: 0.5px !important;
+  }
+}

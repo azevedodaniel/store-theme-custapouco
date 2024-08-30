@@ -1,0 +1,59 @@
+{
+  "vtex.menu@2.x:menu#header-desktop-category-menu": {
+    "title": "Menu",
+    "props": {
+      "blockClass": "category-header",
+      "experimentalOptimizeRendering": true
+    },
+    "children": [
+      "experimental__visibility-layout#header-desktop-item-1",
+      "experimental__visibility-layout#header-desktop-item-2",
+      "experimental__visibility-layout#header-desktop-item-3",
+      "experimental__visibility-layout#header-desktop-item-4",
+      "experimental__visibility-layout#header-desktop-item-5",
+      "experimental__visibility-layout#header-desktop-item-6",
+      "experimental__visibility-layout#header-desktop-item-7",
+      "experimental__visibility-layout#header-desktop-item-8"
+    ]
+  },
+
+  "experimental__visibility-layout#header-desktop-item-1": {
+    "title": "Visibilidade | Menu Item 1",
+    "children": ["menu-item#header-desktop-item-1"]
+  },
+
+  "experimental__visibility-layout#header-desktop-item-2": {
+    "title": "Visibilidade | Menu Item 2",
+    "children": ["menu-item#header-desktop-item-2"]
+  },
+
+  "experimental__visibility-layout#header-desktop-item-3": {
+    "title": "Visibilidade | Menu Item 3",
+    "children": ["menu-item#header-desktop-item-3"]
+  },
+
+  "experimental__visibility-layout#header-desktop-item-4": {
+    "title": "Visibilidade | Menu Item 4",
+    "children": ["menu-item#header-desktop-item-4"]
+  },
+
+  "experimental__visibility-layout#header-desktop-item-5": {
+    "title": "Visibilidade | Menu Item 5",
+    "children": ["menu-item#header-desktop-item-5"]
+  },
+
+  "experimental__visibility-layout#header-desktop-item-6": {
+    "title": "Visibilidade | Menu Item 6",
+    "children": ["menu-item#header-desktop-item-6"]
+  },
+
+  "experimental__visibility-layout#header-desktop-item-7": {
+    "title": "Visibilidade | Menu Item 7",
+    "children": ["menu-item#header-desktop-item-7"]
+  },
+
+  "experimental__visibility-layout#header-desktop-item-8": {
+    "title": "Visibilidade | Menu Item 8",
+    "children": ["menu-item#header-desktop-item-8"]
+  }
+}
