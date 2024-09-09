@@ -1,7 +1,7 @@
 {
   "vendor": "inovakipartnerbr",
   "name": "theme",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
@@ -93,9 +93,6 @@
     "custapoucoseduzir.productgrid": "0.x",
     "custapoucoseduzir.sizetable": "1.x"
   },
-  "peerDependencies": {
-    "vtex.reviews-and-ratings": "2.x",
-    "vtex.wish-list": "1.x"
-  },
+  "peerDependencies": {},
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
